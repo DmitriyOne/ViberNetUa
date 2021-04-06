@@ -1,0 +1,110 @@
+//BEGIN header
+header.header
+  .header__row
+    //- logo
+    .header__logo 
+      a(href="#").header__logo-link 
+        img(src="img/header/logo.svg", alt="logo").logoWhite
+        img(src="img/header/logoViol.svg", alt="logo1").logoViol
+      .header__svg-line
+        <svg viewBox="0 0 2 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 0V32" stroke="url(#paint0_linear)"/>
+          <defs>
+          <linearGradient id="paint0_linear" x1="1.5" y1="0" x2="1.5" y2="32" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="0"/>
+          <stop offset="0.541667" stop-color="white"/>
+          <stop offset="1" stop-color="white" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      .header__logo-text. 
+        Официальный партнер Viber в Украине 
+
+
+    //- burger 
+    .header-btn
+      .header__burger 
+        span 
+
+    //- menu
+    nav.menu
+      ul.menu__list 
+        li
+          a(href="#").menu__link Наши базы
+        li
+          a(href="#").menu__link Кейсы
+        li
+          a(href="#").menu__link Виды рассылок
+        li
+          a(href="#").menu__link Контакты
+        
+      .menu__phone
+        a(href="tel: +38 099 909 90 09" ).select-phoneMTS +38 (099) 909 90 09
+        a(href="tel: +38 096 989 96 79" ).select-phoneKV  +38 (096) 989 96 79
+        a(href="tel: +38 093 939 36 48" ).select-phoneLF  +38 (093) 939 36 48
+      
+      .menu__language 
+        a(href="#").menu__language-link RU
+        a(href="#").menu__language-link UA
+        a(href="#").menu__language-link EN
+
+
+
+
+    //- contacts
+    .header__contacts
+      //- select phone
+      .header__select-phone
+        span.tringal.jsTringal
+        .select-phone__top
+          span.select__phone
+            a(href="#" draggable="false").select-phoneMTS.phone-top +38 (099) 909 90 09
+
+        .select__body-phone
+          .select__item-phone
+            a(href="#" draggable="false" ).select-phoneKV  +38 (096) 989 96 79
+          .select__item-phone
+            a(href="#" draggable="false" ).select-phoneLF  +38 (093) 939 36 48
+          .select__item-phone.remove
+            a(href="#" draggable="false" ).select-phoneMTS +38 (099) 909 90 09
+
+      
+      .header-telegram 
+        a(href="#")
+          img(src="img/header/telegram.svg", alt="telegram")
+
+      
+
+      //- select language
+      .header__select-language
+        .tringal-language.jsTringal-language
+        .select-language__top
+          span.select__language-top
+            a(href="#").link__language RU
+
+        .select__body-language
+          .select__item-language
+            a(href="#").link__language UA
+          .select__item-language
+            a(href="#").link__language EN
+          .select__item-language.remove
+            a(href="#").link__language RU
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+
+//END header

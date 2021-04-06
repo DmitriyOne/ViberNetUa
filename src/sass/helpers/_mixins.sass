@@ -1,0 +1,48 @@
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+// height
+=rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content
+
+=rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @content
+
+
+  
+
+// fonts
+=font
+  font-family: 'roboto', Arial, sans-serif
+  color: #7360F2
+
+
+    
+
+
+
+
+// flex in center
+=center
+  display: flex
+  justify-content: center
+  align-items: center
+=center-x
+  display: flex
+  justify-content: center
+=center-y
+  display: flex
+  align-items: center
+=center-column
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center

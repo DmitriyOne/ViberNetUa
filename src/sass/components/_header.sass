@@ -1,0 +1,574 @@
+.header
+  background: #fff
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+  z-index: 3
+  .header__row
+    max-width: 1366px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+// logo
+.header__logo
+  display: flex
+  align-items: center
+  width: 309px
+  padding: 20px 0
+  padding-left: 24px
+  padding-right: 34px
+  background-color: #8776FB
+  position: relative
+  overflow: hidden
+  +r(1130)
+    width: 295px
+    padding-right: 30px
+    +r(1020)
+      width: 270px
+      padding-right: 25px
+      padding-left: 20px
+      +r(900)
+        width: 309px
+        padding-left: 25px
+        +r(768)
+          width: 270px
+          padding: 15px 20px
+          +r(620)
+            width: 150px
+            background-color: #fff
+  &-link
+    margin-right: 14px
+    +r(1130)
+      margin-right: 12px
+      +r(1020)
+        margin-right: 7px
+        +r(900)
+          margin-right: 14px
+          z-index: 2
+          +r(768)
+            margin-right: 7px
+            +r(620)
+              margin: 0
+    img
+      +r(1130)
+        width: 85px
+        height: 32px
+        +r(1020)
+            width: 78px
+            height: 28px
+            +r(900)
+              width: 90px
+              height: 35px
+
+  &-text
+    margin-left: 14px
+    font-size: 12px
+    font-weight: 400
+    line-height: 17px
+    color: #fff
+    +r(1130)
+      font-size: 11px
+      margin-left: 12px
+      line-height: 14px
+      +r(1020)
+        font-size: 10px
+        margin-left: 10px
+        line-height: 15px
+        +r(900)
+          margin-left: 14px
+          font-size: 12px
+          line-height: 17px
+          +r(768)
+            font-size: 10px
+            margin-left: 10px
+            line-height: 15px
+            +r(620)
+              display: none
+  
+  &::after
+    content: ''
+    position: absolute
+    top: -30px
+    right: -65px
+    background-color: #fff
+    border-radius: 50%
+    width: 80px
+    height: 168%
+    box-shadow: inset 0 1px 3px #000
+    +r(1130)
+      box-shadow: inset 0 1px 2px #000
+      +r(620)
+        display: none
+
+.header__svg-line
+  svg
+    width: 2px
+    height: 36px
+    +r(1130)
+      height: 25px
+      +r(1020)
+        height: 22px
+        +r(900)
+          height: 36px
+          +r(620)
+            display: none
+
+
+.header__logo
+  .logoWhite
+    +r(620)
+      display: none
+    
+  .logoViol
+    display: none
+    +r(620)
+      display: block
+      
+
+.logoWhite.active
+  display: block
+
+.logoViol.active
+  display: none
+
+
+
+
+
+
+
+
+
+
+
+// menu
+.menu
+  padding: 0 10px
+  +r(900)
+    position: fixed
+    right: -100%
+    top: 0
+    transition: all .7s
+    width: 100%
+    height: 100vh
+    padding: 0 
+    background-color: #7360F2
+
+.menu__list
+  display: flex
+  +r(900)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 80px
+    +r(768)
+      padding-top: 70px
+  .menu__link
+    font-size: 16px
+    line-height: 24px
+    color: #B0B0B0
+    text-decoration: none
+    transition: color .3s
+    +r(1130)
+      font-size: 15px
+      +r(1020)
+        font-size: 14px
+        +r(900)
+          font-weight: 700
+          font-size: 24px
+          line-height: 36px
+          color: #fff
+    &:hover
+      color: $blue
+      +r(900)
+        color: #FBE75E
+
+  li
+    margin-left: 48px
+    +r(1200)
+      margin-left: 25px
+      +r(900)
+        margin-left: 0
+        width: 100%
+        text-align: center
+        padding: 20px 0
+  li:nth-child(1)
+    margin-left: 0
+    +r(900)
+      background-color: #6D5BE7
+  
+
+.menu__list
+  +r(900)
+    li:nth-child(3)
+      background-color: #6D5BE7
+    
+
+
+
+
+
+// burger
+.header-btn
+  display: none
+  cursor: pointer
+  +r(900)
+    display: block
+    position: absolute
+    top: 23px
+    right: 25px
+    z-index: 3
+    transition: all .5s
+    +r(768)
+      top: 19px
+      right: 20px
+.header__burger
+  position: relative
+  width: 37px
+  height: 33px
+  z-index: 3
+  +r(620)
+    height: 28px
+  & span
+    position: absolute
+    border-radius: 2px
+    top: 14px
+    right: 0
+    width: 22px
+    height: 5px
+    background-color: #7360F2
+    +r(620)
+      height: 4px
+      top: 12px
+    
+
+.header__burger::before, .header__burger::after
+  content: ''
+  position: absolute
+  right: 0
+  border-radius: 2px
+  height: 5px
+  background-color: #7360F2
+  +r(620)
+    height: 4px
+.header__burger::before
+  width: 37px
+  top: 0
+.header__burger::after
+  width: 30px
+  bottom: 0
+
+// FOR JQ
+.header__burger.active::before
+  transform: rotate(45deg)
+  top: 10px
+  right: 3px
+  height: 3px
+  background-color: #fff
+  width: 24px
+
+.header__burger.active::after
+  transform: rotate(-45deg)
+  top: 10px
+  right: 3px
+  background-color: #fff
+  height: 3px
+  width: 24px
+
+.header__burger.active span
+  display: none
+
+
+.menu.active
+  right: 0
+
+
+
+.menu__phone
+  display: none
+  +r(900)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50%
+    margin: 0 auto
+    background: #fff
+    border-radius: 8px
+    z-index: 2
+    +r(620)
+      width: 60%
+      +r(540)
+        width: 70%
+        +r(480)
+          width: 90%
+  a
+    color: #4A4A4A
+    font-weight: 700
+    font-size: 24px
+    line-height: 36px
+    text-decoration: none
+  .select-phoneMTS
+    padding: 17px 18px 8px 32px
+    &::before
+      width: 24px
+      height: 24px
+      top: calc(50% - 7px)
+      left: 0px
+  .select-phoneKV
+    padding: 8px 18px 8px 32px
+    &::before
+      width: 24px
+      height: 24px
+      top: calc(50% - 13px)
+      left: 0px
+  .select-phoneLF
+    padding: 8px 18px 17px 32px
+    &::before
+      width: 24px
+      height: 24px
+      top: calc(50% - 16px)
+      left: 0px
+
+
+.menu__language
+  display: none
+  +r(900)
+    display: block
+    text-align: center
+    z-index: 2
+    margin-top: 15px
+  .menu__language-link
+    display: inline-block
+    font-weight: 500
+    font-size: 16px
+    color: #fff
+    line-height: 24px
+    text-decoration: none
+    padding: 10px 20px
+    transition: all .4s
+    &:hover
+      background: #6D5BE7
+      border-radius: 4px
+      color: #FBE75E
+
+
+
+
+
+
+
+
+
+
+
+// select
+
+.select__phone, .select__language-top
+  display: block
+
+.header__contacts
+  display: flex
+  padding-right: 25px
+  +r(1020)
+    padding-right: 20px
+    +r(900)
+      display: none
+
+.header__select-phone
+  cursor: pointer
+  position: relative   
+  & a
+    display: block
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    text-transform: uppercase
+    color: #B0B0B0
+    background-color: #fff
+    transition: all .4s
+    +r(1130)
+      font-size: 14px
+      line-height: 22px
+      +r(1020)
+        font-size: 12px
+        line-height: 16px
+
+    &:hover
+      background-color: #F1EFFE
+      color: #4A4A4A
+      font-weight: 500
+
+  
+.tringal
+  display: block
+  position: absolute
+  right: 10px
+  top: calc( 50% - 3px )
+  border: 4px solid transparent
+  border-top: 4px solid #B0B0B0
+  z-index: 1
+  +r(1130)
+    right: 6px
+    top: calc(50% - 2px)
+    border: 3px solid transparent
+    border-top: 3px solid #b0b0b0
+    +r(1020)
+      display: none
+  
+
+
+
+.select-phoneMTS, .select-phoneKV, .select-phoneLF
+  position: relative
+  padding: 18px 27px 18px 50px
+  user-select: text
+  +r(1130)
+    padding: 15px 18px 15px 40px
+    +r(1020)
+      padding: 12px 14px 12px 30px
+  &::before
+    content: ''
+    position: absolute
+    top: calc( 50% - 12px )
+    left: 17px
+    width: 24px
+    height: 24px
+    padding-left: 17px
+    background-image: url('../img/header/vodafon.svg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    +r(1130)
+      top: calc(50% - 10px)
+      left: 11px
+      width: 19px
+      height: 19px
+      +r(1020)
+        top: calc(50% - 8px)
+        left: 8px
+        width: 5px
+        height: 17px
+.select-phoneKV::before
+  background-image: url('../img/header/kstar.svg')
+.select-phoneLF::before
+  background-image: url('../img/header/life.svg')
+
+.header__select-language
+  cursor: pointer
+  position: relative
+  display: flex
+  align-items: center
+  &:hover
+    font-weight: 500
+    color: #4A4A4A
+  & a
+    display: block
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    text-transform: uppercase
+    color: #B0B0B0
+    background-color: #fff
+    text-decoration: none
+    transition: all .5s
+    +r(1130)
+      font-size: 14px
+      line-height: 22px
+      +r(1020)
+        font-size: 12px
+        line-height: 16px
+
+    &:hover
+      background-color: #F1EFFE
+      color: #4A4A4A
+
+.select__body-phone, .select__body-language
+  display: none
+  position: absolute
+  top: 113%
+  left: 0
+  +r(1130)
+    top: 124%
+    +r(1020)
+      top: 140%
+.link__language
+  position: relative
+  padding: 20px 18px
+  +r(1130)
+    padding: 15px 16px
+    +r(1020)
+      padding:  11px 11px
+
+// JS start
+.header__select-phone.is-active .select__body-phone,
+.header__select-language.is-active .select__body-language
+  display: block
+
+.jsTringal.active
+  border-top: 4px solid #4A4A4A
+  +r(1130)
+    border-top: 3px solid #4a4a4a
+    +r(1020)
+      border: none
+
+
+.jsTringal-language.active
+  border-top: 4px solid #4A4A4A
+  +r(1130)
+    border-top: 3px solid #4a4a4a
+    +r(1020)
+      border: none
+
+
+.select__item-phone.remove
+  display: none
+
+.select__item-language.remove
+  display: none
+
+// JS end
+
+
+
+
+
+
+.header-telegram
+  +center
+  margin: 0 32px
+  +r(1130)
+    margin-right: 6px
+    margin-left: 12px
+    +r(1020)
+      margin-right: 10px
+      margin-left: 10px
+  img
+    +r(1020)
+      width: 18px
+      height: 18px
+
+
+.tringal-language
+  position: absolute
+  right: 6px
+  top: calc( 50% - 2px )
+  border: 4px solid transparent
+  border-top: 4px solid #B0B0B0
+  z-index: 1
+  +r(1130)
+    border: 3px solid transparent
+    border-top: 3px solid #B0B0B0
+    +r(1020)
+      display: none
+
+
+
+
+
+.jsTringal
+  transition: all .5s
+.jsTringal-language
+  transition: all .5s
