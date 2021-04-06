@@ -4,7 +4,18 @@ footer.footer
     .row.footer__row 
 
       //- первая колонка
-      .col-md-4
+      .col-md-4.col-sm-6
+
+        //- 575
+        .footer__logo575 
+          a(href="#")
+            img(src="img/header/logo.svg", alt="logo")
+          .footer__logo-svg
+
+          .footer__logo-text575 Официальный партнер Viber в Украине
+
+        //- the end 575
+
         .footer__logo
           a(href="#").header__logo-link.footer__logo-link 
             img(src="img/header/logo.svg", alt="logo")
@@ -12,15 +23,34 @@ footer.footer
             Официальный партнер Rakuten Viber в Украине
 
 
-
-
-
       //- вторая колонка
-      .col-md-4
+      .col-md-4.col-sm-6
+        .footer__messenger
+          .massenger__wrap
+            .telegram__title.massenger__title Для быстрой связи пишите в:
+            .telegram__text Telegram-chat
 
+            .mail__title.massenger__title Наш меил:
+            .mail__text info@viber.net.ua
 
 
       //- третья колонка
-      .col-md-4
+      .col-md-4.col-sm-12
+        .footer__contact 
+          .footer__contact-title
+            .massenger__title Наши телефоны:
+            .select-phoneMTS.footer__contact-phone +38 (099) 649 96 89
+            .select-phoneKV.footer__contact-phone +38 (096) 348 90 59
+            .select-phoneLF.footer__contact-phone +38 (063) 080 43 87
+
+  .footer__copyright
+    .container.footer__copyright-wrap
+
+        .footer__copyright-left © 2013-2021 
+          a(href="#") viber.net.ua
+
+        .footer__copyright-right 
+          a(href="#") Политика конфиденциальности 
+
 
 //END footer
