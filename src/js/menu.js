@@ -10,7 +10,20 @@ $('.header-btn').on('click', function() {
     $('.logoWhite').removeClass('active');
     $('.logoViol').removeClass('active');
   }
+
+  if ($('.menu').hasClass('active')) {
+    $('body').addClass('fixedPosition');
+  }
+  else {
+    $('body').removeClass('fixedPosition');
+  }
+
+
+
 });
+
+
+
 
 
 
