@@ -1,0 +1,171 @@
+
+  
+.container__contacts
+  background-image: url('../img/bc-contacts.jpeg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  min-height: 390px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#7360F2, .8)
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(255, 255, 255, .7) 0%, rgba(246, 241, 255, 0.801) 32.29%, rgba(193, 170, 255, 0.7) 100%)
+  .wrap__contacts
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    max-width: 730px
+    text-align: center
+    position: relative
+    z-index: 1
+    +r(640)
+      padding: 0 10px
+  .contacts__title
+    padding-top: 80px
+    font-weight: 700
+    font-size: 36px
+    line-height: 54px
+    color: #7360F2
+    +r(768)
+      font-size: 34px
+      line-height: 48px
+      padding: 60px 10px 0 10px
+      +r(640)
+      font-size: 36px
+      max-width: 490px
+      +r(470)
+        font-size: 24px
+        line-height: 36px
+        color: #4A4A4A
+        padding-top: 40px
+        max-width: 290px
+    span
+      +r(470)
+        color: #7360F2
+  .contacts__text
+    font-size: 16px
+    line-height: 24px
+    color: #7360F2
+    margin-top: 24px
+    margin-bottom: 36px
+    +r(768)
+      font-size: 14px
+      line-height: 23px
+      margin-top: 21px
+      max-width: 615px
+      +r(640)
+        max-width: 480px
+        +r(470)
+          font-size: 16px
+          line-height: 24px
+          max-width: 288px
+          color: #4A4A4A
+  .contacts__form
+    padding-bottom: 90px
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.contacts__form
+  form
+    display: flex
+    +r(640) 
+      flex-direction: column
+  input[type="tel"], .zayavka
+    border: 1px solid transparent
+    border-radius: 30px
+    background-color: #fff
+    height: 52px
+    padding: 0 24px
+    box-sizing: border-box
+    display: block
+    margin-left: auto
+    margin-right: auto
+    font-size: 16px
+    line-height: 23px
+    color: #4A4A4A
+    transition: all .4s
+    &:focus
+      border: 1px solid #00D8FF
+    &:hover
+      background-color: #F1EFFE
+  input::placeholder
+    font-size: 16px
+    line-height: 23px
+    color: rgba(#B0B0B0, .5)
+  .zayavka
+    margin-left: 30px
+    background-color: #FBE75E
+    display: flex
+    justify-content: center
+    align-items: center
+    +r(640)
+      margin-left: 0
+      margin-top: 16px
+      width: 288px
+    &:hover
+      background-color: #FBE75E
+    &:focus
+      border: 1px solid transparent
+      
+
+
+  input[type="tel"]
+    width: 255px
+    +r(640) 
+      margin: 0
+      width: 288px
+
+  .button 
+    --text: #7360F2
+    --font-size: 23px
+    +r(640)
+      color: #4A4A4A
+  .button div span 
+    color: #7360F2
+    +r(640)
+      color: #4A4A4A

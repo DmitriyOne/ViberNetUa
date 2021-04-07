@@ -16,7 +16,6 @@
       margin: 0 auto
       padding-top: 60px
 
-
 .subtitle-text
   font-size: 16px
   line-height: 24px
@@ -24,10 +23,12 @@
   padding: 16px 20px
   +r(560)
     padding: 24px 20px 36px 20px
-  
 
-
-
+.container__popup
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
 
 // сам popup
 .popup
@@ -68,7 +69,6 @@
       +r(560)
         width: 18px
         height: 18px
-
 
 .wrap__popup
   max-width: 480px
@@ -127,10 +127,6 @@
     &:hover
       background-color: #FBE75E
 
-
-
-
-
   input[type='email']
     margin: 16px 0
 
@@ -144,19 +140,15 @@
 
 .popup
   .wrap__popup
-    .button 
+    .button
       --text: #4A4A4A
       --font-size: 23px
       transform: none
-    .button div span 
+    .button div span
       color: #4a4a4a
-    input[type='radio']:not(.switch) 
+    input[type='radio']:not(.switch)
       width: 12px
       height: 12px
-
-
-
-
 
 // крестик
 .popup__btn
@@ -177,11 +169,8 @@
 .popup__btn-right
   transform: rotate(-45deg)
 
-
-
-
-@supports(-webkit-appearance: none) or (-moz-appearance: none) 
-  input[type='radio'] 
+@supports(-webkit-appearance: none) or (-moz-appearance: none)
+  input[type='radio']
     // --active: #275EFE
     --active-inner: #00C1F9
     // --focus: 2px rgba(39, 94, 254, .3)
@@ -203,14 +192,14 @@
     border: 1px solid var(--bc, var(--border))
     background: var(--b, var(--background))
     transition: background .3s, border-color .6s, box-shadow .2s
-    &:after 
+    &:after
       content: ''
       display: block
       left: calc(50% - 5px)
       top: calc(50% - 5px)
       position: absolute
       transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s)
-    
+
     &:checked
       border: 1px solid #00D8FF
       --b: var(--active)
@@ -219,59 +208,50 @@
       --d-t: .6s
       --d-t-e: cubic-bezier(.2, .85, .32, 1.2)
 
-    &:disabled 
+    &:disabled
       --b: var(--disabled)
       cursor: not-allowed
       opacity: .9
-      &:checked 
+      &:checked
         --b: var(--disabled-inner)
         --bc: var(--border-check)
-      
-      & + label 
-        cursor: not-allowed
-      
 
-    &:hover 
-      &:not(:checked) 
-        &:not(:disabled) 
+      & + label
+        cursor: not-allowed
+
+    &:hover
+      &:not(:checked)
+        &:not(:disabled)
           --bc: var(--border-hover)
-        
-      
-    
-    &:focus 
+
+    &:focus
       box-shadow: 0 0 0 var(--focus)
-    
-    &:not(.switch) 
+
+    &:not(.switch)
       width: 21px
-      &:after 
+      &:after
         opacity: var(--o, 0)
-      
-      &:checked 
+
+      &:checked
         --o: 1
-      
-    
-    & + label 
+
+    & + label
       font-size: 14px
       line-height: 21px
       display: inline-block
       vertical-align: top
       cursor: pointer
       margin-left: 4px
-    
-  
-  input[type='radio'] 
+
+  input[type='radio']
     border-radius: 50%
-    &:after 
+    &:after
       width: 10px
       height: 10px
       border-radius: 50%
       background: var(--active-inner)
       opacity: 0
       transform: scale(var(--s, .7))
-    
-    &:checked 
+
+    &:checked
       --s: .5
-    
-  
-
-
