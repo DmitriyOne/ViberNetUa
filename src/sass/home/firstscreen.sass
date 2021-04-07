@@ -1,0 +1,140 @@
+.container__firstScreen
+  background-image: url('../img/head.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  width: 100%
+  height: 93vh
+  position: relative
+  +r(620)
+    height: 91vh
+  +center
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#7360F2, .8) 
+    z-index: 1
+
+
+.wrap__firstScreen
+  position: relative
+  z-index: 2
+  +center
+  flex-direction: column
+  max-width: 625px
+  +r(620)
+    padding-top: 41px
+    padding-bottom: 40px
+
+.firstScreen__title
+  text-align: center
+  font-weight: 800
+  font-size: 48px
+  line-height: 72px
+  color: #FFFFFF
+  +r(768)
+    font-size: 40px
+    line-height: 65px
+    +r(620)
+      font-size: 36px
+      line-height: 55px
+      padding: 0 30px
+      +r(520)
+        font-size: 24px
+        line-height: 36px
+        padding: 0 70px
+        +r(360)
+          width: 220px
+          margin: 0 auto
+          padding: 0
+  span
+    color: #FBE75E
+    +r(448)
+      display: block
+
+.firstScreen__text
+  margin-top: 24px
+  margin-bottom: 43px
+  font-size: 18px
+  line-height: 27px
+  color: #FFFFFF
+  text-align: center
+  padding: 0 20px
+  +r(768)
+    padding: 0px 50px
+    font-size: 16px
+    +r(520)
+      padding: 0 65px
+      margin-top: 16px
+      margin-bottom: 24px
+      +r(390)
+        padding: 0px 25px
+
+
+
+
+
+
+.firstScreen__form
+  form
+    display: flex
+    +r(620) 
+      flex-direction: column
+  input[type="tel"], .zayavka
+    border: 1px solid transparent
+    border-radius: 30px
+    background-color: #fff
+    height: 52px
+    padding: 0 24px
+    box-sizing: border-box
+    display: block
+    margin-left: auto
+    margin-right: auto
+    font-size: 16px
+    line-height: 23px
+    color: #4A4A4A
+    transition: all .4s
+    &:focus
+      border: 1px solid #00D8FF
+    &:hover
+      background-color: #F1EFFE
+  input::placeholder
+    font-size: 16px
+    line-height: 23px
+    color: rgba(#B0B0B0, .5)
+  .zayavka
+    margin-left: 30px
+    background-color: #FBE75E
+    display: flex
+    justify-content: center
+    align-items: center
+    +r(620)
+      margin-left: 0
+      margin-top: 16px
+      width: 288px
+    &:hover
+      background-color: #FBE75E
+    &:focus
+      border: 1px solid transparent
+      
+
+
+  input[type="tel"]
+    width: 255px
+    +r(620) 
+      margin: 0
+      width: 288px
+
+  .button 
+    --text: #7360F2
+    --font-size: 23px
+    +r(620)
+      color: #4A4A4A
+  .button div span 
+    color: #7360F2
+    +r(620)
+      color: #4A4A4A
