@@ -3,13 +3,18 @@
   justify-content: center
   align-items: center
   padding: 61px 0
+  +r(520)
+    padding: 32px 0
 
 .wrap__thanks
   display: flex
   justify-content: space-between
   align-items: center
   max-width: 935px
-  +r()
+  +r(768)
+    flex-direction: column
+    +r(520)
+      margin: 16px 0
   
   
 .wrap__thanks-content
@@ -17,6 +22,16 @@
   margin-left: 95px
   +r(1000)
     margin-left: 70px
+    +r(768)
+      margin-left: 0
+      margin-top: 40px
+      +r(520)
+        margin-top: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
 
 
 
@@ -29,6 +44,11 @@
   +r(1000)
     font-size: 40px
     line-height: 52px
+    +r(768)
+      font-size: 44px
+      +r(520)
+        font-size: 24px
+        line-height: 36px
 
 .thanks-content__text
   font-size: 16px
@@ -40,12 +60,26 @@
     font-size: 13px
     line-height: 20px
     max-width: 320px
-
+    +r(768)
+      font-size: 14px
+      max-width: 345px
+      margin: 24px auto
+      +r(520)
+        font-size: 16px
+        margin: 16px auto
+        max-width: 280px
+        text-align: center
 
 .picture__thanks
+  +r(520)
+    padding: 0 15px
   img
     +r(1000)
       width: 320px
+      +r(768)
+        width: 350px
+        +r(520)
+          width: 250px
 
 .container__thanks
   .wrap__thanks
@@ -57,6 +91,11 @@
         +r(1000)
           max-width: 190px
           padding: 12px 28px
+          +r(768)
+            margin: 0 auto
+            +r(520)
+              padding: 15px 60px
+              max-width: 288px
         div
           span
             color: #fff
@@ -67,3 +106,5 @@
 
       .btn-back
         font-size: 14px
+        +r(520)
+          font-size: 16px
