@@ -2,15 +2,15 @@
 
 
 // селект телефонов
-$('.select__phone').on('click', function() {
-  $('.header__select-phone, .tringal').toggleClass('is-active');
+$('.select__phone, .tringal').on('click', function() {
+  $('.header__select-phone').toggleClass('is-active');
 });
 
 
 $('.select__item-phone').on('click', function() {
   var html = $(this).html();
   $('.select__phone').html(html);
-  $('.header__select-phone, .tringal').removeClass('is-active');
+  $('.header__select-phone').removeClass('is-active');
   $('.select__item-phone').removeClass('remove');
   $(this).addClass('remove');
 });
@@ -21,9 +21,10 @@ $('.select__item-phone').on('click', function() {
 
 
 
+
 // селект языков
-$('.select__language-top').on('click', function() {
-  $('.header__select-language, .traingal-language').toggleClass('is-active');
+$('.select__language-top, .jsTringal-language').on('click', function() {
+  $('.header__select-language').toggleClass('is-active');
 });
 
 
