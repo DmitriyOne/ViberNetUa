@@ -5,5 +5,5 @@ import './popup';
 import './button';
 import './error';
 
-
+import './number';
 
