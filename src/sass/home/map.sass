@@ -9,7 +9,7 @@
   font-size: 36px
   line-height: 54px
   color: #FBCF5E
-  +r(1000)
+  +r(1050)
     font-size: 32px
     line-height: 48px
     +r(900)
@@ -25,7 +25,7 @@
   margin: 0 auto
   .wrap__map
   padding: 80px 20px 70px 20px
-  +r(1000)
+  +r(1050)
     padding-top: 60px
     padding-bottom: 50px
     +r(900)
@@ -38,7 +38,7 @@
 
   .wrap__country
     max-width: 380px
-    +r(1000)
+    +r(1050)
       max-width: 285px
       +r(900)
         max-width: 380px
@@ -77,7 +77,7 @@
 
   .country__line2
     margin: 24px 0
-    +r(1000)
+    +r(1050)
       margin: 18px 0
       +r(900)
         margin-left: auto
@@ -92,7 +92,7 @@
       margin-left: 16px
       font-size: 16px
       line-height: 24px
-      +r(1000)
+      +r(1050)
         font-size: 14px
         line-height: 22px
         margin-left: 14px
@@ -113,7 +113,7 @@
   .country-img, .gender-img, .hobbies-img
     width: 130px
     margin-right: 60px
-    +r(1000)
+    +r(1050)
       width: 110px
       margin-right: 30px
       +r(900)
@@ -124,8 +124,8 @@
 
   .map__title
     padding-bottom: 24px
-    +r(1000)
-      font-size: 28px
+    +r(1050)
+      font-size: 27px
       line-height: 40px
       padding-bottom: 44px
       +r(900)
@@ -146,6 +146,7 @@
   .wrap__map-numbers
     max-width: 160px
     margin-left: 40px
+    margin-bottom: 40px
     +r(900)
       margin-left: auto
       margin-right: auto
@@ -161,7 +162,7 @@
     font-size: 16px
     line-height: 24px
     padding-bottom: 16px
-    +r(1000)
+    +r(1050)
       padding-bottom: 24px
       +r(900)
         font-size: 19px
@@ -178,21 +179,107 @@
 
   .map-numbers-client
     margin: 24px 0
-    +r(1000)
+    +r(1050)
       margin: 18px 0
 
 
 .wrap__svg-map
   svg
-    +r(620)
+    +r(1050)
       width: 100%
-      +r(480)
-        height: 350px
-        +r(420)
-          height: 300px
-          +r(380)
-            height: 250px
-            +r(360)
-              height: 220px
-              +r(340)
-                height: 200px
+      +r(620)
+        width: 100%
+        +r(480)
+          height: 350px
+          +r(420)
+            height: 300px
+            +r(380)
+              height: 250px
+              +r(360)
+                height: 220px
+                +r(340)
+                  height: 200px
+
+
+.map__text-colum
+  display: none
+  +r(900)
+    display: block
+    margin: 36px 0
+  .map__subtext-top
+    padding-bottom: 16px
+    font-size: 16px
+    line-height: 24px
+    +r(620)
+      color: #4a4a4a
+  .map__subtext-bottom
+    font-size: 16px
+    line-height: 24px
+    +r(620)
+      color: #4a4a4a
+
+.wrap__map-line2
+  display: flex
+  +r(900)
+    display: block
+  .wrap__map-offer
+    width: 50%
+    position: relative
+    margin-top: 37px
+    padding-left: 30px
+    +r(900)
+      width: 520px
+      margin-left: auto
+      margin-right: auto
+      margin-top: 50px
+      min-height: 70px
+      padding-left: 10px
+      padding-right: 10px
+      +r(620)
+        margin-top: 80px
+        max-width: 400px
+        +r(470)
+          width: 288px 
+          margin-top: 100px
+          padding: 0 20px
+  .wrap__map-subtext
+    width: 50%
+  .map__subtext-top
+    padding-bottom: 10px
+
+.wrap__map-subtext
+  p
+    font-size: 16px
+    line-height: 24px
+  +r(900)
+    display: none
+
+  
+.map-offer-text 
+  position: absolute
+  bottom: 0
+  background-color: #FBE75E
+  border-radius: 4px
+  padding: 12px 135px 12px 22px
+  +r(1125)
+    font-size: 15px
+    padding-right: 105px
+    +r(1020)
+      padding-right: 70px
+      +r(620)
+        color: #4a4a4a
+        +r(470)
+          padding: 12px 75px 12px 16px
+.map-offer-img
+  position: absolute
+  bottom: -15px
+  right: 40px
+  +r(1050)
+    right: 0
+    +r(900)
+      right: 10px
+      +r(620)
+        right: 5px
+        +r(470)
+          right: 15px
+          bottom: 10px
