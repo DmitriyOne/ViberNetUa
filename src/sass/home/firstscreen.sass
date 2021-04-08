@@ -6,9 +6,10 @@
   width: 100%
   height: 93vh
   position: relative
-  +r(620)
-    height: 91vh
   +center
+  +r(768)
+    height: 100%
+    display: block
   &::before
     content: ''
     position: absolute
@@ -26,9 +27,10 @@
   +center
   flex-direction: column
   max-width: 625px
-  +r(620)
-    padding-top: 41px
-    padding-bottom: 40px
+  +r(768)
+    display: block
+    margin: 0 auto
+    padding: 70px 0
 
 .firstScreen__title
   text-align: center
@@ -113,7 +115,8 @@
     justify-content: center
     align-items: center
     +r(620)
-      margin-left: 0
+      margin-right: auto
+      margin-left: auto
       margin-top: 16px
       width: 288px
     &:hover
@@ -126,7 +129,7 @@
   input[type="tel"]
     width: 255px
     +r(620) 
-      margin: 0
+      margin: 0 auto
       width: 288px
 
   .button 

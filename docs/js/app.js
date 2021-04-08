@@ -105,7 +105,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./select */ \"./select.js\");\n\n__webpack_require__(/*! ./tringal */ \"./tringal.js\");\n\n__webpack_require__(/*! ./menu */ \"./menu.js\");\n\n__webpack_require__(/*! ./popup */ \"./popup.js\");\n\n__webpack_require__(/*! ./button */ \"./button.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9zZWxlY3QnO1xuaW1wb3J0ICcuL3RyaW5nYWwnO1xuaW1wb3J0ICcuL21lbnUnO1xuaW1wb3J0ICcuL3BvcHVwJztcbmltcG9ydCAnLi9idXR0b24nO1xuXG5cblxuXG5cblxuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\n__webpack_require__(/*! ./select */ \"./select.js\");\n\n__webpack_require__(/*! ./tringal */ \"./tringal.js\");\n\n__webpack_require__(/*! ./menu */ \"./menu.js\");\n\n__webpack_require__(/*! ./popup */ \"./popup.js\");\n\n__webpack_require__(/*! ./button */ \"./button.js\");\n\n__webpack_require__(/*! ./error */ \"./error.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9zZWxlY3QnO1xuaW1wb3J0ICcuL3RyaW5nYWwnO1xuaW1wb3J0ICcuL21lbnUnO1xuaW1wb3J0ICcuL3BvcHVwJztcbmltcG9ydCAnLi9idXR0b24nO1xuaW1wb3J0ICcuL2Vycm9yJztcblxuXG5cbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ }),
 
@@ -118,6 +118,18 @@ eval("\n\n__webpack_require__(/*! ./select */ \"./select.js\");\n\n__webpack_req
 
 "use strict";
 eval("\n\ndocument.querySelectorAll('.button').forEach(function (button) {\n  return button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>';\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9idXR0b24uanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2J1dHRvbi5qcz82YWE3Il0sInNvdXJjZXNDb250ZW50IjpbImRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy5idXR0b24nKS5mb3JFYWNoKGJ1dHRvbiA9PiBidXR0b24uaW5uZXJIVE1MID0gJzxkaXY+PHNwYW4+JyArIGJ1dHRvbi50ZXh0Q29udGVudC50cmltKCkuc3BsaXQoJycpLmpvaW4oJzwvc3Bhbj48c3Bhbj4nKSArICc8L3NwYW4+PC9kaXY+Jyk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./button.js\n");
+
+/***/ }),
+
+/***/ "./error.js":
+/*!******************!*\
+  !*** ./error.js ***!
+  \******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9lcnJvci5qcy5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./error.js\n");
 
 /***/ }),
 

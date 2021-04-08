@@ -7,9 +7,27 @@
       .wrap__form
         p.subtitle-text Заполните форму,  наш менеджер свяжется с вами и поможет решить вашу задачу
         form(action="#", method="post")
-          input(type="text", name="name" placeholder="Ваше имя" autocomplete="off") 
+
+          input(type="text", name="name" placeholder="Ваше имя" autocomplete="off")
+          .error__input-name.error__input
+            .err__img
+              img(src="img/error.svg", alt="err")
+            .err__text Текст ошибки
+
           input(type="email", name="email" placeholder="Ваш e-mail" autocomplete="off")
-          input(type="text", name="text-site" placeholder="Ваш сайт" autocomplete="off")
+          .error__input-email.error__input
+            .err__img
+              img(src="img/error.svg", alt="err")
+            .err__text Текст ошибки
+
+
+
+          input(type="text", name="text-site" placeholder="Ваш сайт" autocomplete="off").input__websait
+          .error__input-websait.error__input
+            .err__img
+              img(src="img/error.svg", alt="err")
+            .err__text Текст ошибки
+
           div 
             input(type="radio", name="radio" id="radio" )
             label(for="radio") Я согласен с 
