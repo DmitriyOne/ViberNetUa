@@ -72,6 +72,7 @@
     "lodash": "^4.17.11"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "swiper": "^6.5.5"
   }
 }

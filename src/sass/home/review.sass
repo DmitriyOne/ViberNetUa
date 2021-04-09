@@ -2,12 +2,13 @@
   width: 100%
   padding-top: 80px
   padding-bottom: 97px
+  padding-left: 10px
   background-color: #FBFBFB
   .wrap__review
-    border: 1px solid #000
     max-width: 1140px
     margin: 0 auto
     display: flex
+    position: relative
   .wrap__review-content
     max-width: 255px
     padding-bottom: 80px
@@ -21,17 +22,10 @@
     font-size: 16px
     line-height: 24px
 
-
-
-
-
-
-
   // swiper
   .swiper-container
     width: 100%
     margin-left: 30px
-    overflow: visible
 
   // рамки
   .slide__border
@@ -41,6 +35,8 @@
     border: 1px solid #EFEFEF
     border-radius: 50%
     position: relative
+    margin-top: 15px
+    transition: all .4s
   .slide__pamka1
     position: absolute
     top: calc( 50% - 118px )
@@ -61,6 +57,7 @@
     background: #FFFFFF
     box-shadow: inset 2px 1px 10px rgba(0, 0, 0, 0.1)
   .slide__pamka3
+    overflow: hidden
     position: absolute
     top: calc( 50% - 98px )
     left: calc( 50% - 65px )
@@ -76,27 +73,170 @@
     width: 100px
     max-width: 130px
     min-height: 164px
+
     img
       width: 100%
       min-height: 164px
       height: 100%
+      position: relative
       display: block
 
-
-
-
   // стрелки
-  .swiper-button-next, .swiper-button-prev
+  .button-next__review, .button-prev__review
+    position: absolute
     top: 90%
-  .swiper-button-prev
+    z-index: 4
+  .button-next__review
     left: -250px
-  .swiper-button-next
-    right: 930px
-
-
+  .button-prev__review
+    right: 0
+    left: -80px
 
   // надпись под рамкой
   .slider__text
+    margin-top: 15px
     width: 255px
     max-width: 255px
     text-align: center
+
+  .slider__name-document
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    color: #000000
+    transition: color .4s
+
+  .slider__comment
+    font-size: 16px
+    line-height: 24px
+    color: #B0B0B0
+
+  // текст при ховере
+  .slider__overlay
+    position: absolute
+    top: 15px
+    right: 16px
+    z-index: 1
+    width: 77%
+    height: 84%
+    background-color: rgba(#7360F2, .8)
+    cursor: pointer
+    transition: opacity 1s
+    opacity: 0
+
+  .slide__pamka1:hover .slider__overlay
+    opacity: 1
+
+  .slider__links-img
+    margin-top: 10px
+    margin-bottom: 20px
+    text-align: center
+  .slider__links-text
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+    padding-left: 15px
+    padding-right: 30px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: calc( 50% - 3px )
+      right: 17px
+      width: 5px
+      height: 8px
+      background-image: url('../img/document/icons/arrow-text.svg')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+
+.slide__border-Demetra.active
+  background-color: #F1EFFE
+  border: 1px solid #E2DEFE
+
+.slider__name-document-Demetra.active
+  color: #7360F2
+
+
+.container__review
+  .wrap__review
+    position: relative
+    .button-prev__review
+      position: absolute 
+      bottom: 0 
+      left: 0
+      right: 0 
+      width: 48px
+      height: 48px
+      background-image: none
+      background-color: #fff
+      border: 1px solid #F2F2F2
+      border-radius: 4px
+      transition: all .7s
+
+    .button-next__review
+      position: absolute 
+      bottom: 0 
+      left: 120px
+      right: 0
+      width: 48px
+      height: 48px
+      background-image: none
+      background-color: #fff
+      border: 1px solid #F2F2F2
+      border-radius: 4px
+      transition: all .7s
+    .pagination__review
+      width: 30px
+      max-width: 30px
+      height: 30px
+      margin-bottom: 12px
+      margin-left: 70px
+      color: transparent
+      span
+        color: #000
+        font-size: 24px
+        line-height: 36px
+
+    .swiper-pagination-total
+      display: none
+
+
+
+
+
+  .arrows__imgL
+    padding: 12px 12px
+    width: 100%
+    height: 100%
+    img
+      position: relative
+      right: 6px
+      width: 32px
+      filter: grayscale(100)
+      z-index: 1
+      transition: all .7s
+  .button-prev__review:hover 
+    background: #F1EFFE
+    border: 1px solid #E2DEFE
+  .button-prev__review:hover img
+    filter: grayscale(0)
+
+
+  .arrows__imgR
+    padding: 12px 12px
+    width: 100%
+    height: 100%
+    img
+      position: relative
+      left: -3px
+      filter: grayscale(100)
+      z-index: 1
+      transition: all .7s
+  .button-next__review:hover 
+    background: #F1EFFE
+    border: 1px solid #E2DEFE
+  .button-next__review:hover img
+    filter: grayscale(0)
+

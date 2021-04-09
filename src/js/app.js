@@ -8,5 +8,4 @@ import './error';
 import './number';
 import './swiper';
 import './magnifi';
-import './magnific-popup';
 
