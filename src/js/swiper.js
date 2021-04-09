@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 
 
 new Swiper('.swiper-review', {
+  allowTouchMove: false,
   slidesPerView: 3,
   spaceBetween: 10,
   loop: true,
