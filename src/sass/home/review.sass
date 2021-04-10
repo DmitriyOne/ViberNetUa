@@ -4,28 +4,87 @@
   padding-bottom: 97px
   padding-left: 10px
   background-color: #FBFBFB
+  +r(900)
+    padding-top: 50px
+    padding-bottom: 190px
+    padding-left: 0
+    +r(620)
+      padding-bottom: 140px
   .wrap__review
     max-width: 1140px
     margin: 0 auto
     display: flex
     position: relative
+    +r(900)
+      flex-direction: column
   .wrap__review-content
     max-width: 255px
     padding-bottom: 80px
+    +r(1100)
+      max-width: 235px
+      +r(970)
+        max-width: 220px
+        +r(900)
+          max-width: 320px
+          margin: 0 auto
+          padding-bottom: 60px
+          +r(620)
+            max-width: 288px
+            padding-bottom: 16px
   .review-content__title
     font-weight: 700
     font-size: 36px
     line-height: 54px
     color: #7360F2
     margin-bottom: 16px
+    +r(1100)
+      font-size: 31px
+      line-height: 48px
+      margin-bottom: 20px
+      +r(900)
+        font-size: 36px
+        line-height: 54px
+        margin-bottom: 16px
+        +r(620)
+          font-size: 24px
+          line-height: 36px
+          color: #4A4A4A
+          max-width: 215px
+          margin-left: auto
+          margin-right: auto
+          +r(420)
+            margin-left: 0
+            margin-right: 0
+
   .review-content__text
     font-size: 16px
     line-height: 24px
+    +r(1100)
+      font-size: 15px
+      line-height: 22px
+      +r(900)
+        font-size: 16px
+        line-height: 24px
+        max-width: 255px
+        margin: 0 auto
+        +r(620)
+          font-size: 15px
+          color: #4A4A4A
+          margin: 0
+
 
   // swiper
   .swiper-container
     width: 100%
     margin-left: 30px
+    +r(1100)
+      max-width: 810px
+      margin-left: 0
+      +r(900)
+          max-width: 542px
+          margin: 0 auto
+          +r(620)
+            max-width: 265px
 
   // рамки
   .slide__border
@@ -86,6 +145,10 @@
     position: absolute
     top: 90%
     z-index: 4
+    +r(1100)
+      top: 91%
+      +r(900)
+        top: 110%
   .button-next__review
     left: -250px
   .button-prev__review
@@ -105,11 +168,25 @@
     line-height: 24px
     color: #000000
     transition: color .4s
+    +r(1100)
+      font-size: 15px
+      line-height: 21px
+      +r(620)
+        font-size: 16px
+        line-height: 24px
+
 
   .slider__comment
     font-size: 16px
     line-height: 24px
     color: #B0B0B0
+    +r(1100)
+      font-size: 15px
+      line-height: 21px
+      +r(620)
+        font-size: 16px
+        line-height: 24px
+
 
   // текст при ховере
   .slider__overlay
@@ -151,12 +228,6 @@
       background-position: center
       background-size: cover
 
-.slide__border-Demetra.active
-  background-color: #F1EFFE
-  border: 1px solid #E2DEFE
-
-.slider__name-document-Demetra.active
-  color: #7360F2
 
 
 .container__review
@@ -174,6 +245,8 @@
       border: 1px solid #F2F2F2
       border-radius: 4px
       transition: all .7s
+      +r(900)
+        left: calc(50% - 140px)
 
     .button-next__review
       position: absolute 
@@ -187,6 +260,10 @@
       border: 1px solid #F2F2F2
       border-radius: 4px
       transition: all .7s
+      +r(900)
+        left: calc(50% - -60px)
+        +r(620)
+          left: calc(50% - -85px)
     .pagination__review
       width: 30px
       max-width: 30px
@@ -194,10 +271,24 @@
       margin-bottom: 12px
       margin-left: 70px
       color: transparent
+      +r(1100)
+        margin-bottom: 4px
+        margin-left: 68px
+        +r(900)
+          bottom: -78px
+          left: calc(50% - 100px)
+          +r(620)
+            bottom: -74px
+            left: calc(50% - 87px)
       span
         color: #000
         font-size: 24px
         line-height: 36px
+        +r(1100)
+          font-size: 22px
+          +r(900)
+            font-size: 24px
+            
 
     .swiper-pagination-total
       display: none
@@ -240,3 +331,35 @@
   .button-next__review:hover img
     filter: grayscale(0)
 
+
+
+
+
+// активация бордера и цвета текста при ховере
+.slide__border-01.active, 
+.slide__border-02.active,
+.slide__border-03.active,
+.slide__border-04.active,
+.slide__border-05.active,
+.slide__border-06.active,
+.slide__border-07.active,
+.slide__border-08.active,
+.slide__border-09.active,
+.slide__border-10.active,
+.slide__border-11.active
+  background-color: #F1EFFE
+  border: 1px solid #E2DEFE
+
+.slider__name-document-01.active,
+.slider__name-document-02.active,
+.slider__name-document-03.active,
+.slider__name-document-04.active,
+.slider__name-document-05.active,
+.slider__name-document-06.active,
+.slider__name-document-07.active,
+.slider__name-document-08.active,
+.slider__name-document-09.active,
+.slider__name-document-10.active,
+.slider__name-document-11.active
+
+  color: #7360F2
