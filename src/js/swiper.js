@@ -35,3 +35,33 @@ new Swiper('.swiper-review', {
 });
 
 
+
+
+
+// // swiper 2 block
+
+new Swiper('.swiper-advantage', {
+  slidesPerView: 1,
+  slidesPerColumn: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination__advantage',
+    clickable: true,
+  },
+  breakpoints: {
+    1050: {
+      slidesPerView: 4,
+      slidesPerColumn: 2,
+    },
+    900: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      slidesPerColumn: 1,
+    },
+
+  }
+
+});
