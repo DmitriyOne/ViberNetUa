@@ -5,7 +5,7 @@ import './popup';
 import './button';
 import './error';
 
-import './number';
+// import './number';
 import './swiper';
 import './fancybox';
 
