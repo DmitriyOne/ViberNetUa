@@ -3,6 +3,9 @@
   background-color: #fff
   padding-top: 50px
   padding-bottom: 110px
+  +r(670)
+    padding-top: 0
+    padding-bottom: 70px
   .wrap__advantage
     display: flex
     max-width: 1140px
@@ -10,14 +13,33 @@
     padding-right: 15px
     +r(900)
       display: block
+      max-width: 550px
+      margin: 0 auto
+      +r(670)
+        max-width: 430px
+        +r(500)
+          max-width: 300px
+          padding: 0 15px
 
   .advantage__picture
     margin-right: 30px
     +r(1050)
       margin: 0
+      +r(900)
+        margin-bottom: 25px
+        +r(670)
+          margin-bottom: 35px
+    img 
+      +r(670)
+        width: 420px
+        +r(500)
+          width: 290px
 
   .advantage__content
     max-width: 550px
+    +r(900)
+      max-width: 450px
+      margin: 0 auto
 
   .advantage__content-title
     font-weight: 700
@@ -29,6 +51,15 @@
       +r(950)
         font-size: 29px
         line-height: 40px
+        +r(900)
+          text-align: center
+          +r(670)
+            color: #4a4a4a
+            font-size: 26px
+            line-height: 35px
+            +r(500)
+              font-size: 24px
+              text-align: left
     span
       font-size: 152px
       line-height: 152px
@@ -39,6 +70,12 @@
         +r(950)
           font-size: 112px
           line-height: 112px
+          +r(670)
+            color: $blue
+            font-size: 95px
+            +r(500)
+              font-size: 80px
+              line-height: 100px
   .advantage__content-subtitle
     font-size: 16px
     line-height: 24px
@@ -47,6 +84,13 @@
     +r(950)
       font-size: 15px
       padding-bottom: 30px
+      +r(670)
+        color: #4a4a4a
+        font-size: 14px
+        padding-bottom: 24px
+        +r(500)
+          font-size: 16px
+          line-height: 24px
 
   .advantage__content-text
     font-weight: 800
@@ -59,15 +103,41 @@
       +r(950)
         font-size: 17px
         line-height: 27px
+        +r(670)
+          font-size: 16px
+          line-height: 22px
+          color: #4a4a4a
+          margin-bottom: 24px
+          +r(500)
+            font-size: 16
+            line-height: 24px
+            font-weight: 400
+    span
+      +r(670)
+        color: #7360F2
     
 
-
+.swiper-slide-advantage
+  +r(900)
+    max-width: 300px
+    +r(670)
+      max-width: 400px 
+      +r(500)
+        max-width: 300px
 
 .wrap__slider-clients
   max-width: 1140px
   margin: 0 auto
   +r(1050)
     padding-left: 30px
+    +r(900)
+      padding: 0
+      max-width: 600px
+      +r(670)
+        max-width: 320px
+        +r(500)
+          max-width: 315px
+          padding: 0 15px
   .wrap__slide-advantage-content
     box-sizing: border-box
     width: 255px
@@ -76,6 +146,14 @@
     padding: 11px 32px 
     background-color: #fff
     cursor: pointer
+    +r(670)
+      width: 300px
+      max-width: 300px
+      +r(500)
+        width: 270px
+        max-width: 270px
+        padding: 8px 20px
+  
 
 .slide-advantage-text
   font-weight: 700
@@ -96,6 +174,13 @@
   position: relative
   z-index: 1
   transition: color .5s
+  +r(670)
+    font-size: 12px
+    line-height: 18px
+    color: #4a4a4a
+    +r(500)
+      font-size: 13px
+      line-height: 20px
 
 
 // слайдер
@@ -103,6 +188,10 @@
   position: relative
   left: -26px
   top: 0px
+  +r(670)
+    left: 10px
+    +r(500)
+      left: 25px
   svg
     position: relative
     z-index: 1
@@ -141,6 +230,10 @@
   position: relative
   +r(950)
     margin-top: -5px
+    +r(670)
+      margin-top: 15px
+      +r(500)
+        margin-top: 20px
   .swiper-pagination-bullet 
     width: 32px
     height: 4px
@@ -153,10 +246,14 @@
       opacity: 1
       background: #7360F2
 
-
+.normal500px
+  +r(500)
+    left: 5px
 
 .slide-advantage-subtext-wrap
   white-space: normal
+  +r(670)
+    white-space: nowrap
 
 .slide-advantage-icon-end
   top: -7px
@@ -193,12 +290,15 @@
       align-items: center
       +r(1050)
         margin-bottom: 26px
-        +r(670)
-          max-width: 220px
-          font-size: 14px
-          +r(500)
-            width: 278px
-            max-width: 100%
+        +r(900)
+          margin-left: auto
+          margin-right: auto
+          +r(670)
+            max-width: 220px
+            font-size: 14px
+            +r(500)
+              width: 278px
+              max-width: 100%
       &:hover
         background-color: #FBE75E
       &:focus

@@ -42,7 +42,7 @@ new Swiper('.swiper-review', {
 
 new Swiper('.swiper-advantage', {
   slidesPerView: 1,
-  slidesPerColumn: 1,
+  slidesPerColumn: 4,
   spaceBetween: 0,
   pagination: {
     el: '.swiper-pagination__advantage',
@@ -57,9 +57,9 @@ new Swiper('.swiper-advantage', {
       slidesPerView: 3,
       slidesPerColumn: 2,
     },
-    768: {
-      slidesPerView: 3,
-      slidesPerColumn: 1,
+    670: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
     },
 
   }
