@@ -85,7 +85,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   },
 
   breakpoints: {
-    900: {
+    901: {
       spaceBetween: 0,
       slidesPerView: 6,
       slidesPerColumn: 6,

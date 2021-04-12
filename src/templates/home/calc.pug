@@ -19,6 +19,7 @@
       .swiper-container.gallery-top
         .swiper-wrapper.gallery-top-wrap
           .swiper-slide.gallery-top-slide 
+            //- первый 
             .gallery-top-slide-content
               .top-slide-wrap-text Отправляйте Viber рассылки от имени Вашей компании. Это отличное имиджевое решение, которое повышает узнаваемость, влияет на рост конверсии. 
               span.text__under-range
@@ -35,8 +36,23 @@
             .gallery-top-slide-img 
               img(src="img/calc/calc1.png", alt="calc1")
             
+          //- второй
+          .swiper-slide.gallery-top-slide 
+            .gallery-top-slide-content
+              .top-slide-wrap-text Отправляйте Viber рассылки от имени Вашей компании. Это отличное имиджевое решение, которое повышает узнаваемость, влияет на рост конверсии. 
+              span.text__under-range
+                span.number-sms Количество сообщений
+              input(type="text" class="js-range-sms1" name="my_range" value="")
+              span.number-sms Тариф
+              input(type="text" class="js-range-suma1" name="my_range" value="")
 
-          .swiper-slide.gallery-top-slide Slide 2
+              span.final-suma-text Итоговая сумма
+              span.final-suma-number 150 000 грн.
+              form(action="#") 
+                a(href="#").button.zayavka Получить&nbsp; пример&nbsp; рассылки
+
+            .gallery-top-slide-img 
+              img(src="img/calc/calc1.png", alt="calc1")
           .swiper-slide.gallery-top-slide Slide 3
           .swiper-slide.gallery-top-slide Slide 4
           .swiper-slide.gallery-top-slide Slide 5
