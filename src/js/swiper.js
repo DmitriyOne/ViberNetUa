@@ -6,7 +6,6 @@ new Swiper('.swiper-review', {
   allowTouchMove: false,
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: true,
   speed: 700,
   pagination: {
     el: '.pagination__review',
@@ -48,6 +47,7 @@ new Swiper('.swiper-advantage', {
     el: '.swiper-pagination__advantage',
     clickable: true,
   },
+
   breakpoints: {
     1050: {
       slidesPerView: 4,
@@ -62,6 +62,44 @@ new Swiper('.swiper-advantage', {
       slidesPerColumn: 2,
     },
 
+  }
+
+});
+
+
+
+// // swiper calc
+
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  allowTouchMove: false,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  slidesPerColumn: 1,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.button-next__gallery-thumbs',
+    prevEl: '.button-prev__gallery-thumbs',
+  },
+
+  breakpoints: {
+    900: {
+      spaceBetween: 0,
+      slidesPerView: 6,
+      slidesPerColumn: 6,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true
+    }
+  },
+});
+var galleryTop = new Swiper('.gallery-top', {
+  allowTouchMove: false,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: galleryThumbs
   }
 
 });

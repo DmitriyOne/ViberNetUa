@@ -1,0 +1,332 @@
+.container__calc
+  width: 100%
+  background-color: #FBFBFB
+  padding-top: 72px
+  padding-bottom: 93px
+  .wrap__calc
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 15px
+  .wrap__calc-title
+    margin-bottom: 50px
+    font-size: 36px
+    line-height: 54px
+    font-weight: 700
+
+.wrap__calc-slider
+  display: flex
+  +r(900)
+    display: block
+
+// левый слайдер
+.gallery-thumbs
+  width: 295px
+  max-width: 295px
+  height: 20%
+  +r(900)
+    width: 400px
+    max-width: 400px
+
+.gallery-top
+  width: 825px
+  max-width: 825px
+
+.wrap__calc-slider
+  .swiper-container
+    .gallery-thumbs-wrap
+      margin: 0
+      width: 100%
+      text-align: center
+    .gallery-thumbs-slide
+      cursor: pointer
+      text-align: left
+      width: 191px !important
+      max-width: 191px !important
+      padding: 34px 86px 34px 26px
+      border: 1px solid #F2F2F2
+      font-size: 16px
+      line-height: 24px
+      +r(1040)
+        width: 168px!important
+        max-width: 168px!important
+        padding: 30px 79px 30px 20px
+        border: 1px solid #f2f2f2
+        font-size: 14px
+        line-height: 23px
+        +r(900)
+          width: 286px!important
+          max-width: 286px!important
+        
+
+      &:hover
+        background-color: #F2F2F2
+
+.gallery-thumbs-wrap
+  .swiper-slide-thumb-active
+    background: #7360F2
+    box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
+    color: #fff
+    font-weight: 800
+    &:hover
+      background: #7360F2 !important
+      box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15) !important
+      color: #fff !important
+      font-weight: 800 !important
+
+.border-slide1
+  border-radius: 8px 0px 0px 0px
+  +r(900)
+    border-radius: 0px
+.border-slide6
+  border-radius: 0px 0px 0px 8px
+  +r(900)
+    border-radius: 0px
+
+// стрелки
+.button-next__gallery-thumbs,
+.button-prev__gallery-thumbs
+  display: none
+  +r(900)
+    display: block
+    position: relative
+
+.button-prev__gallery-thumbs
+  top: 60px
+  left: 180px
+.button-next__gallery-thumbs
+  top: 80px
+  left: 650px
+
+// прывый слайдер 
+.swiper-container.gallery-top
+  padding-top: 100px
+  margin-top: -100px
+  border-radius: 0px 8px 8px 8px
+  .swiper-wrapper.gallery-top-wrap
+    .gallery-top-slide
+      background: #FFFFFF
+      border: 1px solid #F2F2F2
+      box-sizing: border-box
+      box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
+      border-radius: 0px 8px 8px 8px
+      width: 100%
+      max-width: 825px
+  .gallery-top-slide-content
+    width: 380px
+    max-width: 380px
+    margin: 43px 62px 41px 49px
+    +r(1080)
+      margin: 43px 62px 41px 35px
+      +r(1040)
+        width: 350px
+        max-width: 350px
+        min-height: 450px
+        margin: 33px 62px 7px 30px
+
+  .top-slide-wrap-text
+    font-size: 16px
+    line-height: 24px
+    color: #7360F2
+    padding: 12px 15px
+    background-color: #F1EFFE
+    border-radius: 4px
+    margin-bottom: 22px
+    +r(1040)
+      font-size: 15px
+      line-height: 22px
+
+// катинка
+.gallery-top-wrap-img
+  position: relative
+  width: 0px
+.gallery-top-slide-img
+  position: absolute
+  top: -35px
+  left: 500px
+  +r(1130)
+    left: 470px
+    +r(1080)
+      left: 450px
+      +r(1040)
+        top: -55px
+        left: 430px
+        +r(1000)
+          left: 400px
+          +r(960)
+            top: 30px
+  img
+    +r(960)
+      width: 220px
+
+// слайдер справа
+.final-suma-text
+  display: inline-block
+  width: 71px
+  max-width: 71px
+  font-size: 16px
+  line-height: 24px
+  color: #B0B0B0
+  margin-right: 40px
+  margin-top: 25px
+  font-weight: 400
+  margin-left: 10px
+  +r(1040)
+    margin-right: 15px
+.final-suma-number
+  margin-bottom: 25px
+  display: inline-block
+  font-weight: 700
+  font-size: 24px
+  line-height: 36px
+  color: #7360F2
+  padding: 7px 55px
+  background-color: #F2F2F2
+  border-radius: 4px
+  +r(1040)
+    transform: translate(0, -10px)
+
+
+
+
+
+// кнопка в слайдере справа
+.container__calc
+  form
+    display: flex
+    .zayavka
+      border: 1px solid transparent
+      border-radius: 30px
+      height: 52px
+      padding: 0 24px
+      font-size: 16px
+      line-height: 23px
+      color: #4A4A4A
+      transition: all .4s
+      background-color: #FBE75E
+      width: 335px
+      max-width: 335px
+      margin: 0 auto
+      display: flex
+      justify-content: center
+      align-items: center
+      +r(1050)
+        margin-bottom: 26px
+        +r(900)
+          margin-left: auto
+          margin-right: auto
+          +r(670)
+            max-width: 220px
+            font-size: 14px
+            +r(500)
+              width: 278px
+              max-width: 100%
+      &:hover
+        background-color: #FBE75E
+      &:focus
+        border: 1px solid transparent
+  .button
+    --text: #7360F2
+    --font-size: 23px
+    +r(670)
+      --text: #4a4a4a
+  .button div span
+    color: #7360F2
+    +r(670)
+      color: #4a4a4a
+
+
+// range
+
+.irs--flat .irs-max, .irs--flat .irs-min
+  display: none
+
+.text__under-range
+  display: flex
+  justify-content: space-between
+.number-sms
+  font-size: 16px
+  line-height: 24px
+  color: #B0B0B0
+  padding-left: 7px
+  +r(1040)
+    font-size: 14px
+    line-height: 20px
+    color: #b0b0b0
+    padding-left: 9px
+
+
+.irs--flat .irs-single
+  top: -20px
+  left: 315px !important
+  font-weight: 500
+  font-size: 16px
+  line-height: 19px
+  color: #7360F2
+  padding: 0
+  background-color: transparent
+  border-radius: 0px
+  +r(1040)
+    left: 280px !important
+
+.irs--flat .irs-single:before
+  display: none
+
+.irs--flat .irs-line
+  width: 360px !important
+  margin: 0 auto
+  top: 25px
+  height: 2px
+  background: #E0E0E0
+  border-radius: 2px
+  +r(1040)
+    width: 330px !important
+
+.irs-grid-text
+  display: none
+
+.irs--flat .irs-bar
+  background: #7360F2
+  border-radius: 2px
+  height: 2px
+  left: 10px !important
+
+.irs--flat .irs-handle>i:first-child 
+  position: absolute
+  display: block
+  top: 5px
+  left: 50%
+  width: 24px
+  height: 24px
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  margin-left: -6px
+  background-color:  #7360F2
+  &:hover
+    background-color:  #7360F2 
+
+.irs--flat .irs-handle
+  cursor: pointer
+  top: 13px
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  background: #FFFFFF
+  border: 1px solid #F2F2F2
+  box-sizing: border-box
+  box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
+
+
+.irs--flat .irs-handle:hover>i:first-child
+  background-color:  #7360F2 
+
+.irs--flat .irs-handle.state_hover>i:first-child
+  background-color:  #7360F2 
+
+.swiper-wrapper.gallery-top-wrap
+  .small
+    display: none
+
+
+.js-range-suma1
+  margin-top: 10px
