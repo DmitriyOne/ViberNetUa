@@ -11,3 +11,19 @@ import './number';
 import './range';
 
 
+import AOS from 'aos';
+
+AOS.init({
+  delay: 120,
+});
+
+
+
+$(window).scroll(function(e) {
+  if ($(window).scrollTop() >= 200) {
+    $('.wrap__svg-map').fadeIn(200);
+  } else {
+    $('.wrap__svg-map').fadeOut(200);
+  }
+});
+

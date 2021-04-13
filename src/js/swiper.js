@@ -18,13 +18,14 @@ new Swiper('.swiper-review', {
     },
   },
   navigation: {
-    nextEl: '.button-next__review, .arrows__imgR',
-    prevEl: '.button-prev__review, .arrows__imgL',
+    nextEl: '.button-next__review',
+    prevEl: '.button-prev__review',
   },
   breakpoints: {
     900: {
       slidesPerView: 3,
-      spaceBetween: 10
+      spaceBetween: 10,
+      slidesPerGroup: 1
     },
     620: {
       slidesPerView: 2,

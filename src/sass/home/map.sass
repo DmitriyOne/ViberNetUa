@@ -9,6 +9,7 @@
   font-size: 36px
   line-height: 54px
   color: #FBCF5E
+  opacity: 0
   +r(1050)
     font-size: 32px
     line-height: 48px
@@ -18,13 +19,14 @@
       +r(620)
         font-size: 36px
 
-
+.map-numbers.active
+  opacity: 1
 
 .container__map
   max-width: 1140px
   margin: 0 auto
   .wrap__map
-  padding: 80px 20px 70px 20px
+    padding: 80px 20px 70px 20px
   +r(1050)
     padding-top: 60px
     padding-bottom: 50px
@@ -55,8 +57,6 @@
               margin-bottom: 20px
               +r(340)
                 margin-bottom: 30px
-
-
 
   .wrap__map-line1
     display: flex
@@ -139,7 +139,7 @@
             line-height: 36px
             padding-bottom: 24px
             max-width: 240px
-            
+
     span
       +r(620)
         color: #4A4A4A
@@ -182,7 +182,6 @@
     +r(1050)
       margin: 18px 0
 
-
 .wrap__svg-map
   svg
     +r(1050)
@@ -199,7 +198,6 @@
                 height: 220px
                 +r(340)
                   height: 200px
-
 
 .map__text-colum
   display: none
@@ -239,7 +237,7 @@
         margin-top: 80px
         max-width: 400px
         +r(470)
-          width: 288px 
+          width: 288px
           margin-top: 100px
           padding: 0 20px
   .wrap__map-subtext
@@ -254,8 +252,7 @@
   +r(900)
     display: none
 
-  
-.map-offer-text 
+.map-offer-text
   position: absolute
   bottom: 0
   background-color: #FBE75E
@@ -283,5 +280,34 @@
         +r(470)
           right: 15px
           bottom: 10px
+@keyframes fadeIn2
+  0%
+    opacity: .5
+  100%
+    opacity: 1
 
+@-webkit-keyframes fadeIn2
+  0%
+    opacity: .5
+  100%
+    opacity: 1
 
+.wrap__svg-map .animate__fadeIn
+  -webkit-animation-name: fadeIn2
+  animation-name: fadeIn2
+
+@keyframes fadeIn1
+  0%
+    opacity: .2
+  100%
+    opacity: 1
+
+@-webkit-keyframes fadeIn1
+  0%
+    opacity: .2
+  100%
+    opacity: 1
+
+.wrap__svg-map .animate__fadeIn1
+  -webkit-animation-name: fadeIn1
+  animation-name: fadeIn1
