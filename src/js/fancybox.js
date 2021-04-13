@@ -2,7 +2,7 @@ import '@fancyapps/fancybox';
 
 
 $('[data-fancybox]').fancybox({
-  
+  backFocus: false
 });
 
 
