@@ -15,6 +15,7 @@ import AOS from 'aos';
 
 AOS.init({
   delay: 120,
+  once: true
 });
 
 
