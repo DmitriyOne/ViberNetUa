@@ -59,7 +59,7 @@ new Swiper('.swiper-advantage', {
     },
     670: {
       slidesPerView: 2,
-      slidesPerColumn: 2,
+      slidesPerColumn: 4,
     },
 
   }
@@ -85,13 +85,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   },
 
   breakpoints: {
-    901: {
+    900: {
       spaceBetween: 0,
       slidesPerView: 6,
       slidesPerColumn: 6,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true
     }
   },
 });

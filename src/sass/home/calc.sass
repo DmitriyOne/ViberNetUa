@@ -3,6 +3,9 @@
   background-color: #FBFBFB
   padding-top: 72px
   padding-bottom: 93px
+  +r(520)
+    padding-top: 40px
+    padding-bottom: 48px
   .wrap__calc
     max-width: 1140px
     margin: 0 auto
@@ -12,6 +15,11 @@
     font-size: 36px
     line-height: 54px
     font-weight: 700
+    +r(520)
+      margin-bottom: 36px
+      padding-left: 10px
+      font-size: 24px
+      line-height: 36px
 
 .wrap__calc-slider
   display: flex
@@ -24,42 +32,65 @@
   max-width: 295px
   height: 20%
   +r(900)
-    width: 400px
-    max-width: 400px
+    width: 374px
+    max-width: 374px
+    +r(520)
+      width: 290px
+      max-width: 290px
+    
 
 .gallery-top
   width: 825px
   max-width: 825px
 
 .wrap__calc-slider
-  .swiper-container
-    .gallery-thumbs-wrap
-      margin: 0
-      width: 100%
-      text-align: center
-    .gallery-thumbs-slide
-      cursor: pointer
-      text-align: left
-      width: 191px !important
-      max-width: 191px !important
-      padding: 34px 86px 34px 26px
-      border: 1px solid #F2F2F2
-      font-size: 16px
-      line-height: 24px
-      +r(1040)
-        width: 168px!important
-        max-width: 168px!important
-        padding: 30px 79px 30px 20px
-        border: 1px solid #f2f2f2
+  .gallery-thumbs-wrap
+    margin: 0
+    width: 100%
+    text-align: center
+  .gallery-thumbs-slide
+    cursor: pointer
+    text-align: left
+    width: 191px !important
+    max-width: 191px !important
+    padding: 34px 86px 34px 26px
+    border: 1px solid #F2F2F2
+    font-size: 16px
+    line-height: 24px
+    +r(1040)
+      width: 168px!important
+      max-width: 168px!important
+      padding: 30px 79px 30px 20px
+      border: 1px solid #f2f2f2
+      font-size: 14px
+      line-height: 23px
+      +r(900)
+        width: 304px!important
+        max-width: 305px!important
+        padding: 24px 34px
         font-size: 14px
-        line-height: 23px
-        +r(900)
-          width: 286px!important
-          max-width: 286px!important
+        line-height: 24px
+        text-align: center
+        border: 1px solid transparent
+        border-radius: 8px 8px 0px 0px
+        +r(520)
+          width: 250px!important
+          padding: 0px 19px
+          font-weight: 700
+          font-size: 16px
+          line-height: 24px
+          color: #4a4a4a
+          min-height: 74px
+          display: flex
+          justify-content: center
+          align-items: center
+
+
+
         
 
-      &:hover
-        background-color: #F2F2F2
+    &:hover
+      background-color: #F2F2F2
 
 .gallery-thumbs-wrap
   .swiper-slide-thumb-active
@@ -67,11 +98,14 @@
     box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
     color: #fff
     font-weight: 800
+    +r(900)
+      box-shadow: none
     &:hover
       background: #7360F2 !important
       box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15) !important
       color: #fff !important
       font-weight: 800 !important
+
 
 .border-slide1
   border-radius: 8px 0px 0px 0px
@@ -91,18 +125,51 @@
     position: relative
 
 .button-prev__gallery-thumbs
-  top: 60px
-  left: 180px
+  top: -104px
+  left: 0
+  padding: 37px 9px
+  border-radius: 8px 0px 0px 0px
+  background-color: #FBE75E
+  background-image: url('../img/calc/arrow-l.svg')
+  +r(520)
+    top: -108px
+    padding: 38px 9px
 .button-next__gallery-thumbs
-  top: 80px
-  left: 650px
+  left: 348px
+  padding: 37px 9px
+  top: -52px
+  background-image: url('../img/calc/arrow-r.svg')
+  border-radius: 0px 8px 0px 0px
+  background-color: #FBE75E
+  +r(520)
+    left: 264px
+    top: -54px
+    padding: 38px 9px
+
 
 // прывый слайдер 
-.swiper-container.gallery-top
+.gallery-top
   padding-top: 100px
   margin-top: -100px
   border-radius: 0px 8px 8px 8px
-  .swiper-wrapper.gallery-top-wrap
+  +r(900)
+    width: 700px
+    max-width: 700px
+    padding: 0
+    margin-top: -105px
+    +r(750)
+      width: 630px
+      max-width: 630px
+      +r(670)
+        width: 375px
+        max-width: 375px
+        box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
+        border-radius: 0px 0px 8px 8px
+        +r(520)
+          margin-top: -110px
+          width: 291px
+          max-width: 291px
+  .gallery-top-wrap
     .gallery-top-slide
       background: #FFFFFF
       border: 1px solid #F2F2F2
@@ -111,6 +178,17 @@
       border-radius: 0px 8px 8px 8px
       width: 100%
       max-width: 825px
+      +r(900)
+        max-width: 700px
+        +r(750)
+          max-width: 630px
+          +r(670)
+            max-width: 375px
+            box-shadow: 0px 4px 20px rgba(39, 38, 46, 0.15)
+            border-radius: 0px 0px 8px 8px
+            +r(520)
+              max-width: 292px
+
   .gallery-top-slide-content
     width: 380px
     max-width: 380px
@@ -122,6 +200,13 @@
         max-width: 350px
         min-height: 450px
         margin: 33px 62px 7px 30px
+        +r(670)
+          margin-left: 20px
+          margin-top: 30px
+          max-width: 335px
+          +r(520)
+            max-width: 255px
+            margin-top: 20px
 
   .top-slide-wrap-text
     font-size: 16px
@@ -134,8 +219,14 @@
     +r(1040)
       font-size: 15px
       line-height: 22px
+      +r(670)
+        font-size: 16px
+        line-height: 24px
+        color: #4A4A4A
+        +r(520)
+          margin-bottom: 30px
 
-// катинка
+// картинка
 .gallery-top-wrap-img
   position: relative
   width: 0px
@@ -154,6 +245,12 @@
           left: 400px
           +r(960)
             top: 30px
+            +r(900)
+              left: 430px
+              +r(750)
+                left: 395px
+                +r(670)
+                  display: none
   img
     +r(960)
       width: 220px
@@ -172,7 +269,17 @@
   margin-left: 10px
   +r(1040)
     margin-right: 15px
+    +r(670)
+      display: block
+      margin: 0
+      margin-left: 10px
+      width: 150px
+      max-width: 150px
+      margin-top: 15px
 .final-suma-number
+  text-align: center
+  width: 250px
+  max-width: 250px
   margin-bottom: 25px
   display: inline-block
   font-weight: 700
@@ -184,6 +291,22 @@
   border-radius: 4px
   +r(1040)
     transform: translate(0, -10px)
+    +r(670)
+      transform: translate(0, 0)
+      margin-top: 15px
+      margin-left: 10px
+      color: #4a4a4a
+      width: 315px
+      max-width: 315px
+      text-align: center
+      +r(520)
+        width: 240px
+        padding: 7px 25px
+
+        
+      
+
+
 
 
 
@@ -215,11 +338,13 @@
           margin-left: auto
           margin-right: auto
           +r(670)
-            max-width: 220px
-            font-size: 14px
-            +r(500)
-              width: 278px
-              max-width: 100%
+            max-width: 310px
+            font-size: 16px
+            +r(520)
+              width: 250px
+              padding: 0 20px
+              font-size: 15px
+
       &:hover
         background-color: #FBE75E
       &:focus
@@ -243,7 +368,7 @@
 .text__under-range
   display: flex
   justify-content: space-between
-.number-sms
+.number-sms, .number-sms1
   font-size: 16px
   line-height: 24px
   color: #B0B0B0
@@ -253,6 +378,22 @@
     line-height: 20px
     color: #b0b0b0
     padding-left: 9px
+    +r(520)
+      display: block
+      transform: translate(0px, 20px)
+
+.number-sms1
+  +r(520)
+    display: none
+.number-sms520
+  display: none
+  +r(520)
+    display: inline-block
+    font-size: 14px
+    line-height: 20px
+    color: #b0b0b0
+    padding-left: 9px
+
 
 
 .irs--flat .irs-single
@@ -267,9 +408,16 @@
   border-radius: 0px
   +r(1040)
     left: 280px !important
+    +r(670)
+      left: 260px !important
+      +r(520)
+        left: 184px !important
 
 .irs--flat .irs-single:before
   display: none
+
+.js-irs-2
+  margin-top: 20px
 
 .irs--flat .irs-line
   width: 360px !important
@@ -280,6 +428,10 @@
   border-radius: 2px
   +r(1040)
     width: 330px !important
+    +r(670)
+      width: 315px !important
+      +r(520)
+        width: 235px !important
 
 .irs-grid-text
   display: none
@@ -323,7 +475,7 @@
 .irs--flat .irs-handle.state_hover>i:first-child
   background-color:  #7360F2 
 
-.swiper-wrapper.gallery-top-wrap
+.gallery-top-wrap
   .small
     display: none
 

@@ -2,8 +2,6 @@
   .wrap__calc 
     .wrap__calc-title Виды рассылок
     .wrap__calc-slider
-      .swiper-button-next.button-next__gallery-thumbs
-      .swiper-button-prev.button-prev__gallery-thumbs
       .swiper-container.gallery-thumbs
         .swiper-wrapper.gallery-thumbs-wrap
           .swiper-slide.gallery-thumbs-slide.border-slide1 Официальная рассылка с личным кабинетом
@@ -13,9 +11,8 @@
           .swiper-slide.gallery-thumbs-slide Особая рассылка
           .swiper-slide.gallery-thumbs-slide.border-slide6 Чат реклама
   
-      //- .gallery-top-wrap-img
-      //-   .gallery-top-slide-img 
-      //-     img(src="img/calc/calc1.png", alt="calc1")
+        .swiper-button-next.button-next__gallery-thumbs
+        .swiper-button-prev.button-prev__gallery-thumbs
       .swiper-container.gallery-top
         .swiper-wrapper.gallery-top-wrap
           .swiper-slide.gallery-top-slide 
@@ -23,7 +20,8 @@
             .gallery-top-slide-content
               .top-slide-wrap-text Отправляйте Viber рассылки от имени Вашей компании. Это отличное имиджевое решение, которое повышает узнаваемость, влияет на рост конверсии. 
               span.text__under-range
-                span.number-sms Количество сообщений
+                span.number-sms1 Количество сообщений
+                span.number-sms520 Кол-во сообщений
               input(type="text" class="js-range-sms1" name="my_range" value="")
               span.number-sms Тариф
               input(type="text" class="js-range-suma1" name="my_range" value="")
