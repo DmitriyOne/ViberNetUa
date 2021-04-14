@@ -4,7 +4,7 @@ import 'ion-rangeslider/js/ion.rangeSlider';
 
 $('.js-range-sms11').ionRangeSlider({
   grid: true,
-  from: new Date().getMonth(),
+  from: 1,
   values: [
     '10000 ', '15000', '50000', '100000', '1000000'
   ],
