@@ -28,10 +28,12 @@ footer.footer
         .footer__messenger
           .massenger__wrap
             .telegram__title.massenger__title Для быстрой связи пишите в:
-            .telegram__text Telegram-chat
+            .telegram__text
+              a(href="#") Telegram-chat
 
             .mail__title.massenger__title Наш меил:
-            .mail__text info@viber.net.ua
+            .mail__text
+              a(href="#") info@viber.net.ua
 
 
       //- третья колонка
@@ -39,9 +41,12 @@ footer.footer
         .footer__contact 
           .footer__contact-title
             .massenger__title Наши телефоны:
-            .select-phoneMTS.footer__contact-phone +38 (066) 777 12 65
-            .select-phoneKV.footer__contact-phone +38 (068) 777 12 55
-            .select-phoneLF.footer__contact-phone +38 (063) 761 90 90
+            .footer__contact-phone
+              a(href="tel:+380667771265").select-phoneMTS +38 (066) 777 12 65
+            .footer__contact-phone
+              a(href="tel:+380687771255").select-phoneKV +38 (068) 777 12 55
+            .footer__contact-phone
+              a(href="tel:+380637619090").select-phoneLF +38 (063) 761 90 90
 
   .footer__copyright
     .container.footer__copyright-wrap
