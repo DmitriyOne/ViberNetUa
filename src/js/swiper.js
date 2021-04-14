@@ -3,7 +3,6 @@ import Swiper from 'swiper/bundle';
 
 
 new Swiper('.swiper-review', {
-  allowTouchMove: false,
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 700,
@@ -73,7 +72,7 @@ new Swiper('.swiper-advantage', {
 
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  allowTouchMove: false,
+  allowTouchMove: true,
   spaceBetween: 0,
   slidesPerView: 1,
   slidesPerColumn: 1,

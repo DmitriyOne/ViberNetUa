@@ -17,7 +17,6 @@ $('.js-range-sms11').ionRangeSlider({
   }
 });
 
-
 $('.js-range-suma11').ionRangeSlider({
   grid: true,
   from: new Date().getMonth(),
@@ -34,7 +33,6 @@ $('.js-range-suma11').ionRangeSlider({
   }
 
 });
-
 
 // калькулятор на втором слайде 
 

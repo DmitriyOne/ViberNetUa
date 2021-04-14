@@ -21,7 +21,7 @@ AOS.init({
 
 
 $(window).scroll(function(e) {
-  if ($(window).scrollTop() >= 200) {
+  if ($(window).scrollTop() >= 100) {
     $('.wrap__svg-map').fadeIn(200);
   } else {
     $('.wrap__svg-map').fadeOut(200);
