@@ -11,7 +11,9 @@
       font-size: 16px
       line-height: 19px
 
-  
+.mail__title
+  +r(767)
+    display: none
   
   
 .footer
@@ -76,10 +78,12 @@
       font-weight: 500
       line-height: 20px
       padding-left: 30px
-      +r(575)
-        text-align: center
-        font-size: 16px
-        line-height: 24px
+      +r(767)
+        padding-left: 5px
+        +r(575)
+          text-align: center
+          font-size: 16px
+          line-height: 24px
   .telegram__text:before
     content: ''
     position: absolute
@@ -112,10 +116,11 @@
     +r(992)
       top: 3px
       +r(768)
-        left: 60px
+        left: 70px
+        top: 5px
         +r(575)
           top: 5px
-          left: 30px
+          left: 40px
   .footer__contact 
     padding: 45px 0
     +r(767)
@@ -151,7 +156,9 @@
         font-size: 16px
         line-height: 24px
 
-
+.mail__text-link
+  +r(767)
+    padding-left: 60px !important
 
 .footer
   .footer__contact      
