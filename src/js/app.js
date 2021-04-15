@@ -34,9 +34,10 @@ $(window).scroll(function(e) {
 
 // плавность при нажатии на меню
 var $page = $('html, body');
-$('a[href*="#"]').click(function() {
+$('a[href*="#"]').click(function(event) {
+  event.preventDefault();
   $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top + 300
+    scrollTop: $($.attr(this, 'href')).offset().top
   }, 2000);
   return false;
 });
@@ -44,10 +45,24 @@ $('a[href*="#"]').click(function() {
 
 
 
-
-
-
 $('.menu__link').click(function() {
-  $('.menu, .header__burger, .header-btn, .logoWhite, .logoViol').removeClass('active');
+  $('.menu, .header-btn, .logoWhite, .logoViol').removeClass('active');
   $('body').removeClass('fixedPosition');
 });
+
+
+// times
+var dataStart = new Date(2021, 3, 15, 0, 0, 0).getTime();
+
+var dataNew = new Date().getTime();
+
+var res = Math.floor(Math.floor((dataNew - dataStart) / 3600000) / 2);
+
+var numberTime = $('.advantage__content-title span').text();
+
+$('.advantage__content-title span').text(+numberTime + res);
+
+console.log(numberTime);
+console.log(dataStart, dataNew, res, new Date(dataStart));
+console.log(res);
+console.log(dataStart);

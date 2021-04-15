@@ -35,3 +35,6 @@ $('.select__item-language').on('click', function() {
   $('.select__item-language').removeClass('remove');
   $(this).addClass('remove');
 });
+
+
+

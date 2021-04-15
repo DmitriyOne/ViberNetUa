@@ -10,6 +10,10 @@ $('.js-range-sms11').ionRangeSlider({
   ],
   onChange: function(data) {
 
+    range2.update({
+      from: data.from
+    });
+
     const valueRange1 = $(data.input[0]).parents('.gallery-top-slide-content1').find('.js-range-suma11').val().substr(0, $(data.input[0]).parents('.gallery-top-slide-content1').find('.js-range-suma11').val().length - 5);
     const valueRange2 = data.from_value;
     $(data.input[0]).parents('.gallery-top-slide-content1').find('.final-suma-number').text((+valueRange1 * +valueRange2).toFixed(0) + ' грн.');
@@ -19,7 +23,8 @@ $('.js-range-sms11').ionRangeSlider({
 
 $('.js-range-suma11').ionRangeSlider({
   grid: true,
-  from: new Date().getMonth(),
+  block: true,
+  from: 1,
   values: [
     '0.82 грн.', '0.79 грн.', '0.76 грн.', '0.74 грн.', '0.72 грн.'
   ],
@@ -33,6 +38,7 @@ $('.js-range-suma11').ionRangeSlider({
   }
 
 });
+var range2 = $('.js-range-suma11').data('ionRangeSlider');
 
 // калькулятор на втором слайде 
 
