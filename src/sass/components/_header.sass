@@ -47,7 +47,7 @@
         margin-right: 7px
         +r(900)
           margin-right: 14px
-          z-index: 2
+          z-index: 4
           +r(768)
             margin-right: 7px
             z-index: 4
@@ -120,20 +120,28 @@
 
 .header__logo
   .logoWhite
-    +r(620)
-      display: none
+    transition: opacity 1s
+    +r(900)
+      position: absolute
+      opacity: 1
+      +r(620)
+        opacity: 0
     
   .logoViol
     display: none
-    +r(620)
+    +r(900)
+      transition: opacity 1s
       display: block
+      opacity: 0
+      +r(620)
+        opacity: 1
       
 
 .logoWhite.active
-  display: block
+  opacity: 1
 
 .logoViol.active
-  display: none
+  opacity: 0
 
 
 
