@@ -95,6 +95,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 var galleryTop = new Swiper('.gallery-top', {
   allowTouchMove: false,
   spaceBetween: 10,
+  navigation: {
+    nextEl: '.button-next__gallery-thumbs',
+    prevEl: '.button-prev__gallery-thumbs',
+  },
   thumbs: {
     swiper: galleryThumbs
   }
