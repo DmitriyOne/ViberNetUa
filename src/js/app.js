@@ -35,16 +35,13 @@ $(window).scroll(function(e) {
 // плавность при нажатии на меню
 
 
-$('a.menu__link').click(function() {
-  $('html, body').animate({
-    scrollTop: $($(this).attr('href')).offset().top + 'px'
-  }, {
-    duration: 500,
-    easing: 'swing'
-  });
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 2000);
   return false;
 });
-
 
 $('.menu__link').click(function() {
   $('.menu, .header__burger, .header-btn, .logoWhite, .logoViol').removeClass('active');
@@ -54,23 +51,42 @@ $('.menu__link').click(function() {
 
 
 
+
+
+
+
+
+
+
 // times
+// получил вчерашнюю дату и переобразовую в милисекунды
 var dataStart = new Date(2021, 3, 15, 0, 0, 0).getTime();
 
+// получил сегодняшнюю дату и переобразовую в милисекунды
 var dataNew = new Date().getTime();
 
+// отнял от сегодняшней вчерашнюю и из милисекудн переобразовую в часы
 var res = Math.floor(Math.floor((dataNew - dataStart) / 3600000) / 2);
+// var res = Math.floor(Math.floor((dataNew - dataStart) / 60) / 2);
 
+// перевожу в переменую то число, что у меня в коде
 var numberTime = $('.advantage__content-title span').text();
 
+// отнимаю свое число, что было написано изначало в коде от того что получил в js
 $('.advantage__content-title span').text(+numberTime + res);
 
-console.log(numberTime);
-console.log(dataStart, dataNew, res, new Date(dataStart));
+
+
+// добавление к слайдеру
+// переводим в переменую цифру со слайда 
+var numberRes = $('.numberRes').text();
+
+// добавляем 1 к этой цифре
+$('.numberRes').text(+numberRes + 1);
+
+
+console.log(numberRes);
 console.log(res);
-console.log(dataStart);
-
-
 
 
 

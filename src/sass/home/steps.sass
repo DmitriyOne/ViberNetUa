@@ -3,6 +3,9 @@
   background-color: #fff
   padding-top: 80px
   padding-bottom: 90px
+  +r(767)
+    padding-top: 60px
+    padding-bottom: 30px
   .wrap__steps
     max-width: 1140px
     padding: 0 15px
@@ -14,3 +17,112 @@
     font-size: 36px
     font-weight: 700
     margin-bottom: 64px
+    +r(767)
+      margin-bottom: 60px
+      font-size: 30px
+      line-height: 46px
+      max-width: 450px
+      margin-left: auto
+      margin-right: auto
+      +r(540)
+        font-size: 24px
+        line-height: 36px
+        max-width: 290px
+        margin-bottom: 36px
+    span
+      +r(767)
+        color: #4a4a4a
+  .steps__line1,
+  .steps__line2
+    display: flex
+    justify-content: space-between
+    +r(767)
+      max-width: 260px
+      margin: 0 auto
+      flex-direction: column
+  img
+    width: 100%
+    min-height: 202px
+    display: block
+    +r(900)
+      min-height: 180px
+      +r(800)
+       min-height: 160px
+  .steps__line2 
+    margin-top: 5px
+    +r(767)
+      margin-top: 0
+  .line2-cash__wrap
+    margin-top: 60px
+    +r(767)
+      margin-top: 0
+
+  .line1-comp__wrap,
+  .line1-planshet__wrap,
+  .line1-document__wrap,
+  .line2-phone__wrap,
+  .line2-cash__wrap,
+  .line2-calc-doc__wrap
+    position: relative
+    width: 255px
+    max-width: 255px
+  .line1-planshet__wrap
+    margin-top: 55px
+    +r(767)
+      margin-top: 0
+  .steps-number
+    position: absolute
+    top: 0
+    right: 0
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    color: #7360F2
+    text-align: center
+    z-index: 1
+    padding: 2px 5px
+    border-radius: 50%
+    background-color: #FBE75E
+    +r(800)
+      font-size: 14px
+      line-height: 20px
+      +r(767)
+        font-size: 16px
+        line-height: 24px
+        +r(540)
+          color: #4a4a4a
+  .steps-text
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    text-align: center
+    color: #000000
+    padding-top: 5px
+    text-transform: uppercase
+    +r(800)
+      font-size: 14px
+      line-height: 20px
+      +r(767)
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 60px
+        margin-top: 10px
+        +r(540)
+          margin-bottom: 40px
+          margin-top: 5px
+  .planshet__wrap-img,
+  .comp__wrap-img,
+  .document__wrap-img,
+  .phone__wrap-img,
+  .cash__wrap-img,
+  .calc-doc__wrap-img
+    text-align: center
+  .svg-steps
+    margin-top: 55px
+    +r(767)
+      display: none
+    img
+      +r(900)
+        width: 80%
+        text-align: center
+        margin: 0 auto
