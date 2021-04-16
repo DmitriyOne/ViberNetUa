@@ -184,6 +184,18 @@
 .map__subtext-bottom
   color: #FBE75E
 .wrap__svg-map
+  +r(900)
+    min-height: 360px
+    +r(470)
+      min-height: 350px
+      +r(400)
+        min-height: 300px
+        +r(380)
+          min-height: 250px
+          +r(350)
+            min-height: 220px
+            +r(340)
+              min-height: 200px
   svg
     +r(1050)
       width: 100%
@@ -311,3 +323,9 @@
 .wrap__svg-map .animate__fadeIn1
   -webkit-animation-name: fadeIn1
   animation-name: fadeIn1
+
+.wrap__svg-map900
+  display: none
+
+.wrap__svg-map900.active
+  display: block
