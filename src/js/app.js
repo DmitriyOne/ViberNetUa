@@ -33,22 +33,25 @@ $(window).scroll(function(e) {
 
 
 // плавность при нажатии на меню
-var $page = $('html, body');
-$('a[href*="#"]').click(function(event) {
-  event.preventDefault();
-  $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 2000);
+
+
+$('a.menu__link').click(function() {
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top + 'px'
+  }, {
+    duration: 500,
+    easing: 'swing'
+  });
   return false;
 });
 
 
-
-
 $('.menu__link').click(function() {
-  $('.menu, .header-btn, .logoWhite, .logoViol').removeClass('active');
+  $('.menu, .header__burger, .header-btn, .logoWhite, .logoViol').removeClass('active');
   $('body').removeClass('fixedPosition');
 });
+
+
 
 
 // times
@@ -66,3 +69,8 @@ console.log(numberTime);
 console.log(dataStart, dataNew, res, new Date(dataStart));
 console.log(res);
 console.log(dataStart);
+
+
+
+
+
