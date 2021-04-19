@@ -211,3 +211,8 @@ $('.js-range-suma111').ionRangeSlider({
 
 });
 var range6 = $('.js-range-suma111').data('ionRangeSlider');
+
+
+
+
+

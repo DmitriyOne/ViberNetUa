@@ -225,55 +225,6 @@
         +r(520)
           margin-bottom: 30px
 
-// картинка
-.gallery-top-slide-img
-  position: absolute
-  top: -35px
-  left: 500px
-  width: 265px
-  max-width: 265px
-  max-height: 545px
-  +r(1130)
-    left: 470px
-    +r(1080)
-      left: 450px
-      +r(1040)
-        top: -55px
-        left: 430px
-        +r(1000)
-          left: 400px
-          +r(960)
-            top: 30px
-            width: 220px
-            max-width: 220px
-            +r(900)
-              left: 430px
-              +r(750)
-                left: 395px
-                +r(670)
-                  display: none
-.gallery-top-slide-img-wrap
-  position: relative
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background-image: url('../img/calc/phone-calc.png')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
-  img
-    display: inline-block
-    position: absolute
-    border: 1px solid #000
-    top: 0
-    left: 0
-    width: 265px
-    max-width: 265px
-    max-height: 545px
-    border-radius: 40.8864px
-    +r(960)
-      width: 220px
 
 
 
@@ -292,6 +243,7 @@
   margin-left: 10px
   +r(1040)
     margin-right: 15px
+    margin-top: 5px
     +r(670)
       display: block
       margin: 0
@@ -339,6 +291,8 @@
 .container__calc
   form
     display: flex
+    +r(900)
+      margin-bottom: 32px
     .zayavka
       border: 1px solid transparent
       border-radius: 30px
@@ -355,18 +309,16 @@
       display: flex
       justify-content: center
       align-items: center
-      +r(1050)
-        margin-bottom: 26px
-        +r(900)
-          margin-left: auto
-          margin-right: auto
-          +r(670)
-            max-width: 310px
-            font-size: 16px
-            +r(520)
-              width: 250px
-              padding: 0 20px
-              font-size: 15px
+      +r(900)
+        margin-left: auto
+        margin-right: auto
+        +r(670)
+          max-width: 310px
+          font-size: 16px
+          +r(520)
+            width: 250px
+            padding: 0 20px
+            font-size: 15px
 
       &:hover
         background-color: #FBE75E
@@ -505,3 +457,142 @@
 
 .js-range-suma1
   margin-top: 10px
+
+
+
+
+// картинка
+.gallery-top-slide-img
+  position: absolute
+  top: -35px
+  left: 500px
+  width: 265px
+  max-width: 265px
+  max-height: 545px
+  +r(1130)
+    left: 470px
+    +r(1080)
+      left: 450px
+      +r(1040)
+        top: -55px
+        left: 430px
+        +r(1000)
+          left: 395px
+          +r(960)
+            top: 15px
+            width: 220px
+            max-width: 220px
+            +r(900)
+              left: 430px
+              +r(750)
+                left: 388px
+                +r(670)
+                  display: none
+.gallery-top-slide-img-wrap
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 265px
+    max-width: 265px
+    min-height: 545px
+    background-image: url('../img/calc/phone-calc.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    z-index: 66
+    +r(960)
+      width: 238px
+      max-width: 265px
+      height: 456px
+      min-height: 456px
+  img
+    display: inline-block
+    position: absolute
+    top: 19px
+    left: 14px
+    width: 235px
+    max-width: 260px
+    max-height: 501px
+    border-radius: 26.8864px
+    +r(960)
+      width: 200px
+      top: 7px
+      left: 18px
+
+
+
+.gallert-top-swiper
+  min-height: 522px
+
+.budget, .click-price
+  width: 100%
+  padding: 12px 24px
+  border: 1px solid #F2F2F2
+  border-radius: 4px
+  font-size: 16px
+  line-height: 24px
+  color: #4A4A4A
+  +r(1040)
+    padding: 12px 10px
+    +r(670)
+      text-align: center
+      font-weight: 500
+  span
+    margin-left: 46px
+    padding: 5px 18px
+    background: #F2F2F2
+    border-radius: 4px
+    font-weight: 800
+    font-size: 16px
+    line-height: 24px
+    color: #7360F2
+    +r(1040)
+      margin-left: 42px
+      +r(670)
+        max-width: 132px
+        margin-left: auto
+        margin-right: auto
+        margin-top: 8px
+        display: block
+
+.click-price
+  margin-top: 24px 
+  margin-bottom: 48px
+  span
+    margin-left: 109px   
+    +r(1040)
+      margin-left: 106px
+      +r(670)
+        padding: 5px 15px
+        margin-left: auto
+
+
+.show-photo
+  display: none
+  width: 100%
+  text-align: center
+  margin-bottom: 24px 
+  +r(670)
+    display: block
+  a 
+    position: relative
+    text-decoration: none
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    padding-left: 32px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 24px
+      height: 24px
+      background-image: url('../img/calc/image-search.svg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+

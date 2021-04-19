@@ -65,16 +65,6 @@ $('.advantage__content-title span').text(+numberTime + res);
 
 
 
-// добавление к слайдеру
-// переводим в переменую цифру со слайда 
-var numberRes = $('.numberRes').text();
-
-// добавляем 1 к этой цифре
-$('.numberRes').text(+numberRes + 1);
-
-
-console.log(numberRes);
-console.log(res);
 
 
 

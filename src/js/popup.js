@@ -1,8 +1,10 @@
 $('.zayavka').click(function(event) {
+  event.preventDefault();
   show();
 });
 
 $('.popup-first__bg').click(function(event) {
+  event.preventDefault();
   hide();
 });
 
@@ -17,8 +19,14 @@ function hide() {
   $('.popup-first__bg').fadeOut(300);
 }
 
+
+
+
+
+
 $('.zayavka-popup-first').click(function(event) {
   event.preventDefault();
+  hide();
   show1();
 });
 

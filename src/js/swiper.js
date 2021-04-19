@@ -94,6 +94,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   allowTouchMove: false,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   spaceBetween: 10,
   navigation: {
     nextEl: '.button-next__gallery-thumbs',
@@ -101,9 +105,55 @@ var galleryTop = new Swiper('.gallery-top', {
   },
   thumbs: {
     swiper: galleryThumbs
-  }
+  },
 
 });
 
 
 
+// скрины в калькуляторе
+new Swiper('.gallert-top-swiper', {
+  preloadImages: false,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 700,
+});
+
+
+
+
+$('.gallery-thumbs-slide1').on('click', function() {
+  $('.gallery-top-slide-img2, .gallery-top-slide-img3, .gallery-top-slide-img4, .gallery-top-slide-img5, .gallery-top-slide-img6').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img').addClass('animate__fadeInRight');
+});
+
+
+$('.gallery-thumbs-slide2').on('click', function() {
+  $('.gallery-top-slide-img1, .gallery-top-slide-img3, .gallery-top-slide-img4, .gallery-top-slide-img5, .gallery-top-slide-img6').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img2').addClass('animate__fadeInRight');
+});
+
+$('.gallery-thumbs-slide3').on('click', function() {
+  $('.gallery-top-slide-img1, .gallery-top-slide-img2, .gallery-top-slide-img4, .gallery-top-slide-img5, .gallery-top-slide-img6').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img3').addClass('animate__fadeInRight');
+});
+
+$('.gallery-thumbs-slide4').on('click', function() {
+  $('.gallery-top-slide-img1, .gallery-top-slide-img3, .gallery-top-slide-img2, .gallery-top-slide-img5, .gallery-top-slide-img6').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img4').addClass('animate__fadeInRight');
+});
+
+$('.gallery-thumbs-slide5').on('click', function() {
+  $('.gallery-top-slide-img1, .gallery-top-slide-img3, .gallery-top-slide-img4, .gallery-top-slide-img2, .gallery-top-slide-img6').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img5').addClass('animate__fadeInRight');
+});
+
+$('.gallery-thumbs-slide6').on('click', function() {
+  $('.gallery-top-slide-img1, .gallery-top-slide-img3, .gallery-top-slide-img4, .gallery-top-slide-img5, .gallery-top-slide-img2').removeClass('animate__fadeInRight');
+  $('.gallery-top-slide-img6').addClass('animate__fadeInRight');
+});
