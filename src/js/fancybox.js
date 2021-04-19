@@ -1,12 +1,15 @@
 import '@fancyapps/fancybox';
 
 
-$('[data-fancybox]').fancybox({
+$('.popup-gallery [data-fancybox]').fancybox({
   backFocus: false
 });
 
 
 
+$('.show-photo [data-fancybox]').fancybox({
+  backFocus: false
+});
 
 
 
