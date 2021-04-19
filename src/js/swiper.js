@@ -157,3 +157,17 @@ $('.gallery-thumbs-slide6').on('click', function() {
   $('.gallery-top-slide-img1, .gallery-top-slide-img3, .gallery-top-slide-img4, .gallery-top-slide-img5, .gallery-top-slide-img2').removeClass('animate__fadeInRight');
   $('.gallery-top-slide-img6').addClass('animate__fadeInRight');
 });
+
+
+
+
+
+
+
+if($('.button-next__gallery-thumbs').hasClass('swiper-button-disabled')) {
+  $('.button-prev__gallery-thumbs').addClass('animate__heartBeat');
+}
+
+
+
+
