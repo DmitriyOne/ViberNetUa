@@ -164,9 +164,6 @@ $('.gallery-thumbs-slide6').on('click', function() {
 
 
 
-if($('.button-next__gallery-thumbs').hasClass('swiper-button-disabled')) {
-  $('.button-prev__gallery-thumbs').addClass('animate__heartBeat');
-}
 
 
 
