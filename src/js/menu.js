@@ -22,7 +22,7 @@ $('.header-btn').on('click', function() {
 
 });
 
-
+  
 $('.menu__list').on('click','a', function(event) {
   event.preventDefault();
   var id  = $(this).attr('href'),

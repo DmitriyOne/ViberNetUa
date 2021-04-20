@@ -1,5 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// с номером
 $('.zayavka').click(function(event) {
   event.preventDefault();
+  $('.wrap__popup-first h2').html($(this).html());
   show();
 });
 
@@ -24,10 +50,16 @@ function hide() {
 
 
 
-$('.zayavka-popup-first, .zayavka1').click(function(event) {
+
+// сама заявка
+$('.zayavka-popup-first').click(function(event) {
   event.preventDefault();
+  $('.wrap__popup h2').html($('.wrap__popup-first').find('h2').html());
   hide();
   show1();
+
+
+
 });
 
 $('.popup__bg').click(function(event) {
@@ -42,6 +74,33 @@ function show1() {
   $('.popup__bg').fadeIn(300);
 }
 function hide1() {
+  $('.popup').fadeOut(300);
+  $('.popup__bg').fadeOut(300);
+}
+
+
+
+// без телефона
+$('.zayavka1').click(function(event) {
+  event.preventDefault();
+  $('.wrap__popup h2').html($(this).html());
+  show2();
+
+
+});
+
+$('.popup__bg').click(function(event) {
+  event.preventDefault();
+  hide2();
+});
+
+
+
+function show2() {
+  $('.popup').fadeIn(300);
+  $('.popup__bg').fadeIn(300);
+}
+function hide2() {
   $('.popup').fadeOut(300);
   $('.popup__bg').fadeOut(300);
 }
