@@ -24,7 +24,7 @@ function hide() {
 
 
 
-$('.zayavka-popup-first').click(function(event) {
+$('.zayavka-popup-first, .zayavka1').click(function(event) {
   event.preventDefault();
   hide();
   show1();
