@@ -14,7 +14,8 @@ import './range';
 import AOS from 'aos';
 
 AOS.init({
-  delay: 120,
+  mirror: true,
+  delay: 300,
   once: true
 });
 
@@ -25,13 +26,17 @@ AOS.init({
 $(window).scroll(function(e) {
   if ($(window).scrollTop() >= 200) {
     $('.wrap__svg-map svg').fadeIn(200);
-    
+
   } else {
     $('.wrap__svg-map svg').fadeOut(200);
   }
 });
 
 
+if (window.innerWidth < 900) {
+  $('.firstScreen__form a').toggleClass('button-none');
+  $('.firstScreen__form a').addClass('animate__heartBeat');
+}
 
 
 

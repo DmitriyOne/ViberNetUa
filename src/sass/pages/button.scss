@@ -66,21 +66,49 @@
     }
 }
 
-.hello-popup{
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-    width: 100%;
-    .btn-back1{
-        margin-top: 50px;
-        background-color: tomato;
+
+.button-none{
+    transform: none !important;
+    span{
+        transform: none !important;
     }
 }
+
+
+@keyframes heartBeat1{
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    14% {
+      -webkit-transform: scale(.95);
+      transform: scale(.95);
+    }
+  
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    42% {
+      -webkit-transform: scale(.95);
+      transform: scale(.95);
+    }
+  
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+  
+    }
+  }
+.animate__heartBeat {
+    animation-name: heartBeat1;
+    --animate-duration: 4s;
+  }
+  
