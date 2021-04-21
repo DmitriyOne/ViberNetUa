@@ -75,6 +75,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "aos": "^2.3.4",
     "ion-rangeslider": "^2.3.1",
+    "lazy-line-painter": "^1.9.6",
     "swiper": "^6.5.5"
   }
 }

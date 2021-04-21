@@ -9,6 +9,7 @@ import './swiper';
 import './fancybox';
 import './number';
 import './range';
+import './lazy-line';
 
 
 import AOS from 'aos';
@@ -44,13 +45,6 @@ if (window.innerWidth < 900) {
 
 
 
-
-
-
-
-
-
-
 // times
 // получил вчерашнюю дату и переобразовую в милисекунды
 var dataStart = new Date(2021, 3, 15, 0, 0, 0).getTime();
@@ -67,6 +61,7 @@ var numberTime = $('.advantage__content-title span').text();
 
 // отнимаю свое число, что было написано изначало в коде от того что получил в js
 $('.advantage__content-title span').text(+numberTime + res);
+
 
 
 

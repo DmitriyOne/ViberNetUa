@@ -37,6 +37,7 @@
   font-size: 48px
   line-height: 72px
   color: #FFFFFF
+  transition: all 1s
   +r(768)
     font-size: 40px
     line-height: 65px
@@ -52,10 +53,7 @@
           width: 220px
           margin: 0 auto
           padding: 0
-  span
-    color: #FBE75E
-    +r(448)
-      display: block
+
 
 .firstScreen__text
   margin-top: 24px
@@ -142,3 +140,33 @@
       color: #4A4A4A
 
 
+
+
+.firstScreen__title .new
+  opacity: 0
+.firstScreen__title .div_opacity
+  transition: opacity .4s ease-in-out
+  opacity: 1
+
+.firstScreen__title-svg
+  position: relative
+  +r(768)
+    text-align: center
+  .svg-one-text
+    position: absolute
+  svg
+    +r(900)
+      width: 600px
+      height: 109px
+      +r(768)
+        width: 500px
+        height: 90px
+        +r(620)
+          width: 380px
+          height: 72px
+          +r(500)
+            width: 335px
+            height: 64px
+            +r(370)
+              width: 315px
+              height: 58px
