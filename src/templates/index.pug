@@ -1,5 +1,5 @@
 ---
-title: Index Page
+title: Viber net
 ---
 extends layouts/_layout
 
@@ -7,14 +7,11 @@ extends layouts/_layout
 
 
 block content
-
-  .wrap-index
-    h1 Готовые блоки
-    .wrap-li
-      li Page:&nbsp&nbsp&nbsp&nbsp&nbsp
-        a(href="error.html") Error
-      li Page:&nbsp&nbsp&nbsp&nbsp&nbsp
-        a(href="thank.html") Thank for visited
-      li Page:&nbsp&nbsp&nbsp&nbsp&nbsp
-        a(href="landing.html") Landing page
-
+  include ./home/firstscreen
+  include ./home/map
+  include ./home/advantage
+  include ./home/review 
+  include ./home/professional
+  include ./home/calc
+  include ./home/steps 
+  include ./home/contacts 

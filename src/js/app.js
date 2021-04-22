@@ -34,10 +34,8 @@ $(window).scroll(function(e) {
 });
 
 
-if (window.innerWidth < 900) {
-  $('.firstScreen__form a').toggleClass('button-none');
-  $('.firstScreen__form a').addClass('animate__heartBeat');
-}
+$('form a').toggleClass('button-none');
+$('form a').addClass('animate__heartBeat');
 
 
 
